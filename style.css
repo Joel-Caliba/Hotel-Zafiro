@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MENU */
+.menu-header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-header .logo img{
+    width: 100px;
+}
+
+.menu-header .header a{
+    color: rgb(214, 214, 214);
+    font-size: 15px;
+    margin: 10px;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: .4s;
+}
+.menu-header .header a:hover{
+    color: white;
+    
+}
+
+
+
+/* INICIO */
+.inicio{
+    overflow: hidden;      /* Evita que el contenido desborde horizontalmente */
+}
+.inicio .inicio-contenedor .imagen{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("img/hotel.jpg");
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center center; /* Centra la imagen de fondo */
+    background-attachment: fixed;
+    filter: brightness(0.7);
+}
+
+.inicio .inicio-contenedor .titulo-inicio{
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+.inicio .inicio-contenedor .titulo-inicio h1{
+    font-size: 60px;
+}
+.inicio .inicio-contenedor .titulo-inicio h2{
+    margin-left: 70px;
+    font-size: 40px;
+}
