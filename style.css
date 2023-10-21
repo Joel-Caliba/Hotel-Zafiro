@@ -49,9 +49,6 @@
 .inicio{
     overflow: hidden;      /* Evita que el contenido desborde horizontalmente */
 }
-.inicio .inicio-contenedor .imagen{
-
-}
 
 .inicio .inicio-contenedor .titulo-inicio{
     color: #E6DAC2;
