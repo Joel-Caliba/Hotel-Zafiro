@@ -230,6 +230,9 @@
 
 .ubicacion .c-ubicacion .u-titulo{
     padding-top: 50px;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
 }
 
   @media (max-width: 1020px){
@@ -244,7 +247,7 @@
     font-size: 50px;
     font-weight: 900;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .linea {
     height: 3px; /* Grosor de la línea */
