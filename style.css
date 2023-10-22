@@ -3,7 +3,18 @@
     padding: 0;
 }
 
-/* MENU */
+/*************** MENU ***************/
+.menu-header .menu-bar{
+    display: none;
+}
+/* Esconder todos los iconos del menu en pantalla grande */
+.menu-header .header span2{
+    display: none;
+}
+.menu-header .menu-bar .boton .boton-reservar{
+    display: block;
+}
+
 .menu-header .header{
     background-color: #e6dac2;
     display: flex;
@@ -41,6 +52,40 @@
 .menu-header .header a:hover{
     color: white;
     
+}
+
+@media (max-width: 1020px){
+    .menu-header .header{
+        width: 30%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        flex-direction: column;
+        position: absolute;
+    }
+    .menu-header .header a{
+        display: flex;
+        width: 100%;
+        float: none;
+        border-bottom:1px solid #ffffff;
+        padding-bottom: 10px;
+    }  
+    /* Mostrar iconos al lado del texto */
+    .menu-header .header span2{
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .menu .menu-header .bt-menu{
+        display: block;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .menu .menu-header .bt-menu span2{
+        float: right;
+        position: relative;
+    }
 }
 /* BOTON DE RESERVAR */
 .menu-header .header button {
@@ -131,7 +176,6 @@
     color: #fff;
    }
 
-
 /* INICIO */
 .inicio{
     overflow: hidden;      /* Evita que el contenido desborde horizontalmente */
@@ -154,8 +198,63 @@
     font-size: 40px;
 }
 
+@media (max-width: 480px){
+    .inicio {
+        width: 100vh;
+    }
 
-/* EVENTOS */
+    .inicio .inicio-contenedor .titulo-inicio h1{
+        font-size: 30px;
+    }
+    .inicio .inicio-contenedor .titulo-inicio h2{
+        margin: 0;
+        font-size: 35px;
+    }
+}
+
+
+/*************** UBICACION ***************/
+.ubicacion .c-ubicacion{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ubicacion .c-ubicacion .u-titulo{
+    padding-top: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+    .ubicacion .c-ubicacion {
+      height: auto; /* Altura automática */
+    }
+
+    .ubicacion .c-ubicacion .mapa{
+        height: auto;
+        width: auto;
+    }
+  
+    .ubicacion .c-ubicacion .u-titulo { 
+      padding-top: 20px;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .ubicacion .c-ubicacion .u-titulo {
+      padding-top: 10px;
+    }
+    .ubicacion .c-ubicacion .mapa{
+        height: auto;
+        width: auto;
+    }
+  }
+
+
+/*************** EVENTOS ***************/
 .eventos .evento-titulo{
     font-size: 50px;
     font-weight: 900;
@@ -217,4 +316,17 @@
 .eventos .c-eventos .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px){
+    .eventos .c-eventos .card h4{
+        font-size: 20px;
+    }
+    .eventos .c-eventos .card p{
+        font-size: 15px;
+    }
+    .eventos .c-eventos{
+        background-color: #D6C19B;
+        height: 20%;
+    }
 }
