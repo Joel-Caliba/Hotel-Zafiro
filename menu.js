@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const btMenu = document.querySelector(".bt-menu");
-    const header = document.querySelector(".header");
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-    btMenu.addEventListener("click", function () {
-        header.classList.toggle("menu-open");
-    });
-});
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
 
-
-
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})
