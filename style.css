@@ -56,6 +56,9 @@
 .menu-header .bt-menu{
     display: none;
 }
+.menu .menu-header .header .boton a{
+    margin:0
+}
 
 /* BOTON DE RESERVAR */
 .menu-header .header button {
