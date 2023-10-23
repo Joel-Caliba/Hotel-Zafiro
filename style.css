@@ -57,71 +57,6 @@
     display: none;
 }
 
-@media (max-width: 1000px){
-    .menu-header .header{
-        display: flex;
-        width: 50%;
-        height: 100vh;
-        margin: 0;
-        position: fixed;
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-
-        opacity: 0;
-        visibility: hidden;
-    }
-    .header.visible{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .menu-header .header a{
-        display: flex;
-        width: 100%;
-        float: none;
-        border-bottom:1px solid #ffffff;
-        padding-bottom: 10px;
-    }  
-    /* Mostrar iconos al lado del texto */
-    .menu-header .header span2{
-        display: flex;
-        margin-right: 10px;
-    }
-
-    .menu .menu-header .bt-menu{
-        display: block;
-        padding: 20px;
-        font-weight: bold;
-        font-size: 35px;
-    }
-    .menu .menu-header .header .bt-menu2{
-        display: flex;
-        padding: 20px;
-        font-weight: bold;
-        font-size: 45px;
-        right: -41%;
-        top: -13px;
-    }
-
-    .bt-menu {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1;
-        color: #fff;
-        font-size: 24px;
-        border: none;
-        background-color: transparent;
-        padding: 10px; /* Ajusta el relleno según tus necesidades */
-        cursor: pointer;
-        transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
-      }
-      
-      .bt-menu:hover {
-        color: #5e4230; /* Cambia el color de fondo en el hover */
-      }
-}
 /* BOTON DE RESERVAR */
 .menu-header .header button {
     position: relative;
@@ -226,10 +161,11 @@
     transform: translate(-50%, -50%);
 }
 .inicio .inicio-contenedor h2{
-    font-size: 70px;
+    text-align: center;
+    font-size: 50px;
 }
 .inicio .inicio-contenedor h1{
-    font-size: 50px;
+    font-size: 65px;
 }
 
 .inicio .inicio-contenedor .titulo-inicio h1{
@@ -240,17 +176,90 @@
     font-size: 40px;
 }
 
-@media (max-width: 480px){
-    .inicio {
-        width: 100vh;
+
+@media (max-width: 1000px){
+    .menu-header .header{
+        display: flex;
+        width: 50%;
+        height: 100vh;
+        margin: 0;
+        position: fixed;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header.visible{
+        opacity: 1;
+        visibility: visible;
     }
 
+    .menu-header .header a{
+        display: flex;
+        width: 100%;
+        float: none;
+        border-bottom:1px solid #ffffff;
+        padding-bottom: 10px;
+    }  
+    /* Mostrar iconos al lado del texto */
+    .menu-header .header span2{
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .menu .menu-header .bt-menu{
+        display: block;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .menu .menu-header .header .bt-menu2{
+        display: flex;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 45px;
+        right: -19vw;
+        top: -13px;
+    }
+
+    .bt-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+        color: #fff;
+        font-size: 24px;
+        border: none;
+        background-color: transparent;
+        padding: 10px; /* Ajusta el relleno según tus necesidades */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+      }
+      
+      .bt-menu:hover {
+        color: #5e4230; /* Cambia el color de fondo en el hover */
+      }
+
+
+      
+      .inicio {
+        width: 100vh;
+    }
     .inicio .inicio-contenedor .titulo-inicio h2{
         margin: 0;
         font-size: 35px;
     }
+    .inicio .inicio-contenedor h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .inicio .inicio-contenedor h1{
+        text-align: center;
+        font-size: 45px;
+    }
 }
-
 
 /*************** UBICACION ***************/
 .ubicacion .c-ubicacion{
