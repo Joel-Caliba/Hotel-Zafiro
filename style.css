@@ -275,7 +275,7 @@
 .ubicacion .c-ubicacion .u-titulo{
     padding-top: 50px;
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -289,7 +289,7 @@
 /*************** EVENTOS ***************/
 .eventos .evento-titulo{
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
     padding-top: 50px;
 }
