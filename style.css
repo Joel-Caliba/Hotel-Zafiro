@@ -318,12 +318,13 @@
     font-weight: 600;
 }
 .eventos .c-eventos{
-    width: 100%;
+    width: 100vw;
     max-width: 1200px;
     height: 430px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: auto;
 }
 .eventos .c-eventos .card img{
@@ -356,4 +357,76 @@
         background-color: #D6C19B;
         height: 20%;
     }
+}
+
+/*************** CONTACTO ***************/
+.contacto{
+    background-color: #162E44;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: flex;
+}
+.contacto .c-contacto{
+    width: 100vw;
+    height: 50vh;
+    margin: 50px;
+    display: flex;
+}
+
+.contacto h1{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.contacto .c-contacto .contactenos{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.contactenos a{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.contactenos a span{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.contacto .c-contacto .redes{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.redes a{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.redes a span{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.c-contacto a:hover{
+    transition: .5s;
+    color: #01B3A7;
+}
+
+
+.contacto2{
+    background-color: #11263A;
+    height: 15vh;
+}
+.contacto2 .redes2{
+    text-align: center;
+}
+.contacto2 .redes2 a{
+    color: #4D5C6B;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 8 0 0;
 }
