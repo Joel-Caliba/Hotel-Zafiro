@@ -428,3 +428,128 @@
         height: 20%;
     }
 }
+
+
+/*************** CONTACTO ***************/
+.contacto{
+    background-color: #162E44;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: flex;
+}
+.contacto .c-contacto{
+    width: 100vw;
+    height: 50vh;
+    margin: 50px;
+    display: flex;
+}
+
+.contacto h1{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.c-contacto .c-info{
+    margin: 50px;
+    width: 40%;
+}
+.c-contacto .c-info p{
+    margin-top: 50px;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+.contacto .c-contacto .contactenos{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.contactenos a{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.contactenos a span{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.c-contacto a:hover{
+    transition: .5s;
+    color: #01B3A7;
+}
+
+.c-contacto .c-registrar{
+    margin: 150px;
+    margin-left: 250px;
+}
+.c-contacto .c-registrar .campo{
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+}
+.c-contacto .c-registrar .formulario{
+    width: 100%;
+    max-width: 280px;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+    outline: 0px;
+}
+.c-contacto .c-registrar .boton{
+    padding: 5px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 0xp 3px 3px 0px;
+    background-color: #D6C19B;
+    color: #FFF;
+    cursor: pointer;
+    outline: 0px;
+}
+
+
+
+.contacto2{
+    background-color: #11263A;
+    height: 11vh;
+    padding: 30px 0px;
+}
+.contacto2 .c-contacto2{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto2 .c-diseñado{
+    color: #4D5C6B;
+}
+.contacto2 .c-contacto2 .c-privacy{
+    color: #4D5C6B;
+}
+
+
+.contacto2 .c-diseñado{
+    width: 20%;
+    margin: 0px 0px 10px;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.contacto2 .redes2 a{
+    color: #4D5C6B;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px 0;
+    font-weight: 500;
+}
+.contacto2 .c-contacto2 .c-privacy a{
+    text-decoration: none;
+    color: #4D5C6B;
+    font-size: 16px;
+    font-weight: 500;
+}
+.contacto2 .c-contacto2 a:hover{
+    color: rgb(216, 216, 216);
+}
