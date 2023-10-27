@@ -1,0 +1,75 @@
+/*habitaciones*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.contenido-habitacion{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contenido-habitacion h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.contenido-habitacion p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.habitacion-contenedor{
+    background-color: #D0B88C;
+}
+.c-habitacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #040643;
+    width: 80%;
+    margin: 0 auto;
+}
+.c-habitacion img{
+    transition: transform 0.3s;
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+}
+.c-habitacion img:hover{
+    transform: scale(1.1);
+}
+
+.imagen-habi{
+    width: 180px;
+    height: 290px;
+    box-shadow: #040643 0px 2px 4px, #040643 0px 7px 13px -3px, #040643 0px -3px 0px inset;
+}
+.habi{
+    margin: 10px;
+}
+.habi .cuerpo h6 {
+    margin-top: 23px; /* Ajusta el valor según tu preferencia */
+    margin-bottom: 10px; /* Ajusta el valor según tu preferencia */
+}
+
+@media (max-width: 480px){
+    .eventos .c-eventos .card h4{
+        font-size: 20px;
+    }
+    .eventos .c-eventos .card p{
+        font-size: 15px;
+    }
+    .eventos .c-eventos{
+        background-color: #D6C19B;
+        height: 20%;
+    }
+}
