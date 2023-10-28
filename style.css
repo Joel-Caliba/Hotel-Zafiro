@@ -436,6 +436,11 @@ h1,h2,h3,h4,h5{
 }
 
 
+.c-diseñado p{
+    display: flex;
+    margin-left: -25px;
+}
+
 .contacto2 .c-diseñado{
     width: 20%;
     margin: 0px 0px 10px;
