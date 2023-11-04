@@ -164,12 +164,12 @@ h1,h2,h3,h4,h5{
 
 /* CUENTA / INICIO DE SESION */
 
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 .cuenta {
 	box-sizing: border-box;
 }
-
 
 .cuenta {
     background-color: transparent;
@@ -599,133 +599,164 @@ h1,h2,h3,h4,h5{
 
 
 /*************** CONTACTO ***************/
-.contacto{
-    background-color: #162E44;
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
-    font-size: 14px;
-    display: flex;
-    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor padre */
-    overflow: hidden; /* Oculta el contenido que se desborde */
-}
-.contacto .c-contacto{
-    width: 100vw;
-    height: auto;
-    margin: 50px;
-    display: flex;
-    justify-content: space-between;
-}
 
-.contacto h1{
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 20px;
+ul {
+    margin: 0px;
+    padding: 0px;
 }
-.c-contacto .c-info{
-    margin: 50px;
-    max-width: 100%;
+.footer-section {
+  background: #151414;
+  position: relative;
 }
-
-.contacto .c-contacto .contactenos{
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-    width: 50vw;
-    max-width: 370px;
+.footer-cta {
+  border-bottom: 1px solid #373636;
 }
-.contactenos a{
-    font-family: 'Montserra t', sans-serif;
-    color: #FFFFFF;
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-decoration: none;
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
 }
-.contactenos a span{
-    margin-top: 10px;
-    margin-right: 20px;
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
 }
-.c-contacto a:hover{
-    transition: .5s;
-    color: #01B3A7;
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
 }
-
-.c-contacto .c-registrar{
-    background-color: black;
-    
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
 }
-.c-contacto .contactenos .campo{
-    width: 100%;
-    max-width: 440px;
-    display: flex;
+.footer-content {
+  position: relative;
+  z-index: 2;
 }
-.c-contacto .contactenos .formulario{
-    width: 100%;
-    max-width: 280px;
-    font-size: 16px;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 3px 0px 0px 3px;
-    outline: 0px;
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
 }
-.c-contacto .contactenos .boton{
-    padding: 5px 15px;
-    border: none;
-    font-size: 16px;
-    border-radius: 0xp 3px 3px 0px;
-    background-color: #D6C19B;
-    color: #FFF;
-    cursor: pointer;
-    outline: 0px;
+.footer-logo {
+  margin-bottom: 30px;
 }
-@media (max-width: 1000px){
-    .contacto .c-contacto .c-info{
-        display: none;
-    }
+.footer-logo img {
+    max-width: 200px;
 }
-
-
-.contacto2{
-    background-color: #11263A;
-    height: auto;
-    padding: 30px 0px;
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
 }
-.contacto2 .c-contacto2{
-    display: flex;
-    justify-content: space-around;
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
 }
-.contacto2 .c-diseñado{
-    color: #4D5C6B;
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
 }
-.contacto2 .c-contacto2 .c-privacy{
-    color: #4D5C6B;
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
 }
-
-
-.c-diseñado p{
-    display: flex;
-    margin-left: -25px;
+.facebook-bg{
+  background: #3B5998;
 }
-
-.contacto2 .c-diseñado{
-    width: 20%;
-    margin: 0px 0px 10px;
-    padding: 0px 15px;
-    font-size: 16px;
-    font-weight: 500;
+.twitter-bg{
+  background: #55ACEE;
 }
-.contacto2 .redes2 a{
-    color: #4D5C6B;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 0 10px 0;
-    font-weight: 500;
+.google-bg{
+  background: #DD4B39;
 }
-.contacto2 .c-contacto2 .c-privacy a{
-    text-decoration: none;
-    color: #4D5C6B;
-    font-size: 16px;
-    font-weight: 500;
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
 }
-.contacto2 .c-contacto2 a:hover{
-    color: rgb(216, 216, 216);
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
 }
