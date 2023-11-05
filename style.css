@@ -683,6 +683,10 @@ h1,h2,h3,h4,h5{
   margin-bottom: 20px;
 }
 
+.habitacion-contenedor .c-habitacion .container a{
+  padding: 14px 30px;
+}
+
 @media (max-width: 1000px){
   .c-habitacion{
       flex-direction: column;
