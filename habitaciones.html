@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="habitaciones.css">
     <!-- Fuente titulo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,47 +18,86 @@
 </head>
 <body>
 
-<!-- HABITACION -->
+<!-- HABITACION --> 
     <section class="habitacion" id="habitacion">
         <div class="habitacion-contenedor">
             <div class="contenido-habitacion">
-                <h1>NUESTRAS <span class="titulo2">HABITACIONES</span></h1>
+                <h1><span class="titulo2">Habitación INDIVIDUAL</span></h1>
             </div>
 
             <div class="c-habitacion">
-
-                <div class="container">
-                    <div class="content-section">
-                        <div class="card">
-                            <img src="img/HabitacionIndividual/habitacionIndividual.png" alt="">
-                            <h2>Habitación Individual</h2>
-                            <p>Parrafo de ejemplo para describir una habitacion individual</p>
-                            <h2></h2>
+                <section>
+                    <div class="container">
+                        <div class="carousel">
+                            <input type="radio" name="slides" checked="checked" id="slide-1">
+                            <input type="radio" name="slides" id="slide-2">
+                            <input type="radio" name="slides" id="slide-3">
+                            <input type="radio" name="slides" id="slide-4">
+                            <input type="radio" name="slides" id="slide-5">
+                            <input type="radio" name="slides" id="slide-6">
+                            <ul class="carousel__slides">
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="img/HabitacionIndividual/habitacionIndividual.png" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Tim Marshall</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="img/HabitacionIndividual/baño.png" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Christian Joudrey</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="img/HabitacionIndividual/living.png" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Steve Carter</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="img/HabitacionIndividual/living2.png" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>    
+                            <ul class="carousel__thumbnails">
+                                <li>
+                                    <label for="slide-1"><img src="img/HabitacionIndividual/habitacionIndividualChica.png" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-2"><img src="img/HabitacionIndividual/bañoChico.png" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3"><img src="img/HabitacionIndividual/livingChico.png" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-4"><img src="img/HabitacionIndividual/living2Chico.png" alt=""></label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="container">
-                    <div class="content-section">
-                        <div class="card">
-                            <img src="img/HabitacionDoble/habitacionDoble.png" alt="">
-                            <h2>Habitacion Doble</h2>
-                            <p>Parrafo de ejemplo para describir una habitacion individual</p>
-                            <h2></h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="content-section">
-                        <div class="card">
-                            <img src="img/HabitacionFamiliar/habitacionGrande.png" alt="">
-                            <h2>Habitación Familiar</h2>
-                            <p>Parrafo de ejemplo para describir una habitacion individual</p>
-                            <h2></h2>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
     </section>
