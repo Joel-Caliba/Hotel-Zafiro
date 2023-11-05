@@ -692,7 +692,7 @@ h1,h2,h3,h4,h5{
   .contenido-habitacion{
       text-align: center;
   }
-  .contenido-habitacion h1{
+  .habitacion-contenedor .contenido-habitacion h1{
       font-size: 35px;
       font-weight: 700;
       padding: 50px;
@@ -739,165 +739,242 @@ button {
   font-size: 1.5em;
 }
 
-/*************** CONTACTO ***************/
+/******************** CONTACTO ********************/
 
-ul {
-    margin: 0px;
-    padding: 0px;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+.contacto {
+  font-family: Roboto;
 }
-.footer-section {
-  background: #151414;
-  position: relative;
+
+.contacto .footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
 }
-.footer-cta {
-  border-bottom: 1px solid #373636;
+
+/* Footer left */
+
+.contacto .footer-distributed .footer-left{
+	float: left;
 }
-.single-cta i {
-  color: #ff5e14;
-  font-size: 30px;
-  float: left;
-  margin-top: 8px;
+
+/* The company logo */
+
+.contacto .footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
 }
-.cta-text {
-  padding-left: 15px;
-  display: inline-block;
+
+.contacto .footer-distributed h3 span{
+	color:  #5383d3;
 }
-.cta-text h4 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
+
+/* Footer links */
+
+.contacto .footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
 }
-.cta-text span {
-  color: #757575;
-  font-size: 15px;
+
+.contacto .footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
 }
-.footer-content {
-  position: relative;
-  z-index: 2;
+
+.contacto .footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
 }
-.footer-pattern img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
+
+/* Footer social icons */
+
+.contacto .footer-distributed .footer-icons{
+	margin-top: 40px;
 }
-.footer-logo {
-  margin-bottom: 30px;
+
+.contacto .footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
-.footer-logo img {
-    max-width: 200px;
+.contacto .footer-distributed .footer-icons a:hover{
+	color: #b98c56;
 }
-.footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
-      color: #7e7e7e;
-  line-height: 28px;
+
+/* Footer Right */
+
+.contacto .footer-distributed .footer-right{
+	float: right;
 }
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+
+.contacto .footer-distributed .footer-right p{
+	display: flex;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
   margin-bottom: 20px;
 }
-.footer-social-icon a {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
+
+/* The contact form */
+
+.contacto .footer-distributed form{
+	display: inline-block;
 }
-.footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
+
+.contacto .footer-distributed form input,
+.contacto .footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
 }
-.facebook-bg{
-  background: #3B5998;
+
+.contacto .footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
 }
-.twitter-bg{
-  background: #55ACEE;
+
+.contacto .footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
 }
-.google-bg{
-  background: #DD4B39;
+
+.contacto .footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
 }
-.footer-widget-heading h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  position: relative;
+
+
+.contacto .footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
 }
-.footer-widget-heading h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 2px;
-  width: 50px;
-  background: #ff5e14;
+
+.contacto .footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
 }
-.footer-widget ul li {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  margin-bottom: 12px;
+
+.contacto .footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
 }
-.footer-widget ul li a:hover{
-  color: #ff5e14;
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.contacto .footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.contacto .footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.contacto .footer-distributed form input,
+	.contacto .footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.contacto .footer-distributed form button{
+		padding: 10px 35px;
+	}
+
 }
-.footer-widget ul li a {
-  color: #878787;
-  text-transform: capitalize;
+
+@media (max-width: 800px) {
+
+	.contacto .footer-distributed{
+		padding: 30px;
+	}
+
+	.contacto .footer-distributed .footer-left,
+	.contacto .footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.contacto .footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.contacto .footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.contacto .footer-distributed form{
+		display: block;
+	}
+
+	.contacto .footer-distributed form button{
+		float: none;
+	}
 }
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
+
+
+/* iconos */
+.footer-left{
+	width: 55%;
 }
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-}
-.subscribe-form button {
-    position: absolute;
-    right: 0;
-    background: #ff5e14;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
-}
-.subscribe-form button i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
-.copyright-area{
-  background: #202020;
-  padding: 25px 0;
-}
-.copyright-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #878787;
-}
-.copyright-text p a{
-  color: #ff5e14;
-}
-.footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
-}
-.footer-menu li:hover a{
-  color: #ff5e14;
-}
-.footer-menu li a {
-  font-size: 14px;
-  color: #878787;
-}
+.footer-cta {
+	border-bottom: 1px solid #373636;
+	}
+.single-cta i {
+	color: #b98c56;
+	font-size: 30px;
+	float: left;
+	margin-top: 8px;
+	}
+.cta-text {
+	padding-left: 15px;
+	display: inline-block;
+	}
+.cta-text h4 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 2px;
+	}
+.cta-text span {
+	color: #757575;
+	font-size: 15px;
+	}
