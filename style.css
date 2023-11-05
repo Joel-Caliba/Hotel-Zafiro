@@ -463,7 +463,7 @@ h1,h2,h3,h4,h5{
 .inicio .inicio-contenedor .boton{
     text-align: center;
 }
-.btn {
+.inicio .inicio-contenedor .btn {
     display: inline-block;
     padding: 0.9rem 1.8rem;
     font-size: 16px;
@@ -479,7 +479,7 @@ h1,h2,h3,h4,h5{
     font-family: inherit;
    }
 
-   .btn::before {
+   .inicio .inicio-contenedor .btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -492,7 +492,7 @@ h1,h2,h3,h4,h5{
     z-index: -1;
    }
    
-   .btn:hover::before {
+   .inicio .inicio-contenedor .btn:hover::before {
     transform: translateX(0);
    }
    .inicio .inicio-contenedor .boton a:hover{
@@ -597,6 +597,147 @@ h1,h2,h3,h4,h5{
 }
 
 
+/*************** HABITACIONES ***************/
+.habitacion-contenedor .container{
+  transition: transform 0.4s;
+  max-width: 100%;
+  height: auto;
+}
+.habitacion-contenedor .container:hover{
+  transform: scale(1.1);
+}
+
+.habitacion-contenedor{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+.habitacion-contenedor h1,h2,h3,h4,h5{
+  font-family: 'Poppins', sans-serif;
+}
+.habitacion-contenedor p{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.habitacion-contenedor .contenido-habitacion{
+  text-align: center;
+}
+.habitacion-contenedor .contenido-habitacion h1{
+  font-size: 50px;
+  font-weight: 400;
+  padding: 50px;
+  font-style: italic;
+}
+.habitacion-contenedor .contenido-habitacion h1 .titulo2{
+  font-style: normal;
+  font-weight: 600;
+}
+
+.habitacion-contenedor .contenido-habitacion p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.habitacion-contenedor{
+  background-color: #D0B88C;
+}
+.c-habitacion{
+  /* probando */
+  width: 100%;
+  max-width: 95%; /* Establece el ancho máximo deseado */
+  margin: 0 auto;  /* Configura márgenes automáticos en los lados izquierdo y derecho para centrar horizontalmente */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #D0B88C;
+}
+
+/* TARJETAS */
+
+.content-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content-section .card{
+  flex: 1;
+  margin: 20px 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0, 0.2);
+}
+.content-section .card img{
+  width: 100%;
+  height: auto;
+}
+.content-section .card h2{
+  margin: 15px 0px;
+  font-size: 28px;
+}
+.content-section .card p{
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px){
+  .c-habitacion{
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px){
+  .contenido-habitacion{
+      text-align: center;
+  }
+  .contenido-habitacion h1{
+      font-size: 35px;
+      font-weight: 700;
+      padding: 50px;
+  }
+  
+}
+/* Botones de reservar en la tarjeta */
+body .btn-bg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body .btn-bg.bg-1 .btn-1 button {
+  color: black;
+  background: transparent;
+  border: 3px solid black;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+body .btn-bg.bg-1 .btn-1 button:hover {
+  background: #E6DAC2;
+  color: white;
+  border: 3px solid #D0B88C;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+button {
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #fff;
+  position: relative;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px 10px 30px;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-size: 1.5em;
+}
 
 /*************** CONTACTO ***************/
 
