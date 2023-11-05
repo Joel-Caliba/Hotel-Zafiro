@@ -685,6 +685,7 @@ h1,h2,h3,h4,h5{
 
 .habitacion-contenedor .c-habitacion .container a{
   padding: 14px 30px;
+  font-weight: 600;
 }
 
 @media (max-width: 1000px){
