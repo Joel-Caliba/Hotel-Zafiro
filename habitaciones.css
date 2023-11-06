@@ -16,7 +16,7 @@
 }
 
 .habitacion-contenedor{
-    background-color: #D0B88C;
+    background-color: #faf7f2;
 }
 .habitacion-contenedor .contenido-habitacion{
     text-align: center;
@@ -183,7 +183,6 @@
   
   .carousel__thumbnails label {
     display: block;
-    @include aspect-ratio(1, 1);
   }
   
   .carousel__thumbnails label:hover,
@@ -200,3 +199,22 @@
     object-fit: cover;
   }
   
+.habitacion-contenedor .c-habitacion .container .credit{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.habitacion-contenedor .c-habitacion .container .descripcion h1{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.linea {
+  width: 100%;
+  height: 1px; /* Establece el grosor de la línea */
+  background-color: #a3a3a8c5; /* Cambia el color de la línea, en este caso, negro */
+  border-radius: 80px;
+}
+
+
+/* APARTADO DE RESERVAS */
