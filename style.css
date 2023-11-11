@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+  overflow: auto;
+}
 h1,h2,h3,h4,h5{
     font-family: 'Poppins', sans-serif;
 }
@@ -945,3 +948,295 @@ h1,h2,h3,h4,h5{
 	color: #757575;
 	font-size: 15px;
 	}
+
+
+
+
+.habitacion1{
+  width: 100%;
+}
+
+
+/* Habitacion Individual */
+/*habitaciones*/
+.habitacion-contenedor{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+.habitacion-contenedor1 h1,h2,h3,h4,h5{
+  font-family: 'Poppins', sans-serif;
+}
+.habitacion-contenedor1 p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.habitacion-contenedor1{
+  background-color: #faf7f2;
+}
+.habitacion-contenedor1 .contenido-habitacion1{
+  text-align: center;
+}
+.habitacion-contenedor1 .contenido-habitacion1 h1{
+  font-size: 50px;
+  font-weight: 400;
+  padding: 50px;
+  font-style: italic;
+}
+.habitacion-contenedor1 .contenido-habitacion1 h1 .titulo2{
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+/* ----------------------------------------------------------- */
+
+/* Styling */
+.habitacion-contenedor1 .c-habitacion1 {
+  margin-top: 50px;
+}
+
+.container1 {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  /* Cambiando la posicion del carousel al medio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  display: block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 22px;
+  /* Cambiando ancho del carousel */
+  width: 50%; 
+  height: auto;
+}
+
+.carousel input {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+
+.carousel input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -300%;
+}
+
+.carousel input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -200%;
+}
+
+.carousel input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -100%;
+}
+
+.carousel input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: 0;
+}
+
+.carousel input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+.carousel input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+.carousel input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+.carousel input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+
+.carousel__slides {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.carousel__slide {
+  position: relative;
+  display: block;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 300ms ease-out;
+  box-sizing: border-box;
+  white-space: normal;
+}
+
+.carousel__slide figure {
+  display: flex;
+  margin: 0;
+  height: 50vh;
+}
+
+.carousel__slide div {
+  position: relative;
+  width: 100%;
+}
+
+.carousel__slide img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__slide figcaption {
+  align-self: flex-end;
+  padding: 20px 20px 0 20px;
+  flex: 0 0 auto;
+  width: 25%;
+  min-width: 150px;
+}
+
+.carousel__slide .credit {
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.carousel__slide.scrollable {
+  overflow-y: scroll;
+}
+
+.carousel__thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 0 -10px;
+}
+
+.carousel__slides + .carousel__thumbnails {
+  margin-top: 20px;
+}
+
+.carousel__thumbnails li {
+  flex: 1 1 auto;
+  max-width: calc((100% / 6) - 20px);
+  margin: 0 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel__thumbnails label {
+  display: block;
+}
+
+.carousel__thumbnails label:hover,
+.carousel__thumbnails label:focus {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  transition: all 300ms ease-in-out;
+}
+
+.carousel__thumbnails img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.habitacion-contenedor1 .c-habitacion1 .container1 .credit{
+font-weight: 800;
+font-size: 20px;
+}
+
+.habitacion-contenedor1 .c-habitacion1 .container1 .descripcion h1{
+text-align: center;
+margin-top: 50px;
+}
+.habitacion-contenedor1 .c-habitacion1 .container1 .descripcion .t-descripcion{
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  }
+.habitacion-contenedor1 .c-habitacion1 .container1 .l-caracteristicas{
+  margin-left: 14%;
+}
+
+
+.linea {
+width: 80%;
+height: 2px; /* Establece el grosor de la línea */
+background-color: #a3a3a8c5; /* Cambia el color de la línea, en este caso, negro */
+border-radius: 80px;
+margin: 50px auto;
+}
+
+
+/* APARTADO DE RESERVAS */
+
+
+
+
+
+
+
+/* ventana emergente */
+.close-button{
+  font-size: 25px;
+  position: fixed;
+  background-color: transparent;
+  border-style: none;
+  right: 7%;
+  top: 7%;
+  z-index: 1000;
+  color: #5d5d5d;
+}
+.close-button:hover{
+  color: black;
+}
+.close{
+  transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
+  transform: translateY(60vh);
+}
+
+
+.ventanaEmergente{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4); /* Negro con 20% de opacidad */
+  z-index: 10;
+  display: none; /* Usamos flexbox para centrar vertical y horizontalmente */
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.ventanaEmergente .ve-contenedor{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  z-index: 11;
+  overflow: auto;
+}

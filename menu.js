@@ -47,3 +47,27 @@ botonCuenta.addEventListener("click", function() {
         seccionCuenta.style.display = "none";
     }
 });
+
+
+
+
+
+
+
+
+
+
+// ventana emergente
+const windowBackground= document.getElementById("ventanaEmergente"),
+    windowContainer= document.getElementById("ve-contenedor"),
+    openButton= document.getElementById("open-button"),
+    closeButton= document.getElementById("close-button")
+
+openButton.addEventListener("click", ()=>{
+    windowBackground.style.display="flex"
+    document.body.style.overflow="hidden"
+    }) 
+closeButton.addEventListener("click", ()=>{
+    windowBackground.style.display="none"
+    document.body.style.overflow="auto"
+    }) 

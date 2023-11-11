@@ -1,0 +1,275 @@
+[33mcommit d956d7e0fec55dbb5f1e7819e479767e9928ff34[m[33m ([m[1;36mHEAD -> [m[1;32mramaJoel[m[33m)[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Thu Nov 9 23:39:40 2023 -0300
+
+    modificando habitaciones
+
+[33mcommit 9091a0fa67157d5efec996fcc9bc6c437abafee3[m[33m ([m[1;31morigin/ramaJoel[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Wed Nov 8 16:20:37 2023 -0300
+
+    terminando seccion eventos
+
+[33mcommit 4fea913b1900aaaadc05f88ca00d5f58b3e07cc9[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Mon Nov 6 23:50:55 2023 -0300
+
+    habitacion familiar terminado
+
+[33mcommit 866bbdc1057d2c2b7bcaf9a91ab707797813bee4[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Mon Nov 6 23:42:28 2023 -0300
+
+    terminado habitacion doble
+
+[33mcommit f298046f3a88d4bb0eeeff3fc30d388404d64bda[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Mon Nov 6 13:16:16 2023 -0300
+
+    terminando seccion de reservas
+
+[33mcommit 8a9f66a7b1b05f251bc4afab1d5c854d1058d5b1[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Nov 5 14:30:33 2023 -0300
+
+    carousel habitacion individual en progreso
+
+[33mcommit fadc5772912d76249332f97ed60c90442c08f8ef[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Nov 5 13:17:51 2023 -0300
+
+    agregado de iconos redes
+
+[33mcommit e07266bcdc8b1718abee5b1dbcdc6fb4fd94c153[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Nov 5 13:12:33 2023 -0300
+
+    arreglo boton reservar en habitaciones 3
+
+[33mcommit 81a78aaa0f9e938181a13c2b21cdc116767184bc[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Nov 5 13:11:46 2023 -0300
+
+    arreglo boton reservar en habitaciones 2
+
+[33mcommit e73e5c5701ec0bfeb2bdbddfa876f3e38db7de23[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Nov 5 13:10:56 2023 -0300
+
+    arreglo boton reservar en habitaciones
+
+[33mcommit d8099a1fac86390800b4e804507eaf953edb5a15[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Nov 5 13:08:06 2023 -0300
+
+    Cambio de boton en seccion habitaciones
+
+[33mcommit fb3d6350a14351a4bb65395b4e2a69b31047a497[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Nov 5 12:52:22 2023 -0300
+
+    cambios en footer
+
+[33mcommit 8ebb45a858d4267933ebde3b432415a6d5a7599e[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Nov 4 22:09:50 2023 -0300
+
+    seccion habitaciones casi lista
+
+[33mcommit fefbcd7f68d194f3dcce60502164ca8711f4112d[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Nov 4 21:38:25 2023 -0300
+
+    seccion habitaciones creada
+
+[33mcommit 77a587a05209108a266261ffcdf11912b1761d5c[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Nov 4 14:49:59 2023 -0300
+
+    nueva seccion contacto
+
+[33mcommit 667a6906eeb349d037aa7b28f753314070176387[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Nov 4 13:55:00 2023 -0300
+
+    inicio de sesion completamente listo
+
+[33mcommit 8cd5e9a02b1c29e169228c626242ef7535f46c86[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Nov 4 01:27:41 2023 -0300
+
+    agregado de login
+
+[33mcommit 46e698b7db3daff493cb42f0f2dba435b1ef7e6f[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Oct 28 00:41:39 2023 -0300
+
+    arreglo de responsive 2
+
+[33mcommit 23853e08c92b8691463618b906e0b3a4881c5cc2[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Oct 28 00:35:51 2023 -0300
+
+    arreglo de responsive
+
+[33mcommit d5472e0d9402e587d1325937ea5ccaecf51f8c30[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Fri Oct 27 15:28:06 2023 -0300
+
+    cambiado de secciones en html aparte, fuentes y botones
+
+[33mcommit 6df491ecd7ea99bc7deec011f4d8125f7ea3bb3e[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Wed Oct 25 17:47:51 2023 -0300
+
+    probando seccion ubicacion ancha
+
+[33mcommit f7b0736efe38567716dd4fa1b13a9abcb8590a68[m
+Merge: 18236f7 a9d4a2a
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Wed Oct 25 17:07:18 2023 -0300
+
+    merge con exito main en ramaJoel
+
+[33mcommit a9d4a2a88f6b183951e559e8f78b6616a08ced08[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Wed Oct 25 17:02:36 2023 -0300
+
+    agregado de contacto
+
+[33mcommit 18236f73882ac52491159371455469d52114c80e[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Wed Oct 25 17:00:26 2023 -0300
+
+    agregado de contacto
+
+[33mcommit 7dcb11d69d54a3e5820e0304229b1b0864d69167[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Wed Oct 25 15:21:47 2023 -0300
+
+    correccion de todo
+
+[33mcommit cea3c388a47ebc998196b80f9770e2e95ac47eba[m
+Merge: 07f83a5 7862c2d
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Wed Oct 25 14:04:29 2023 -0300
+
+    Merge branch 'main' of https://github.com/Joel-Caliba/Hotel-Zafiro
+
+[33mcommit dd4a980baf93ddd308d4caa67ff7ad19195844c9[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Wed Oct 25 00:48:15 2023 -0300
+
+    agregado de contacto
+
+[33mcommit 7862c2d404e448768b8e035fb6d9fcada1e9a4f8[m
+Author: blass <blastolaba@gmail.com>
+Date:   Tue Oct 24 23:37:27 2023 -0300
+
+    img-stilo de habitacion
+
+[33mcommit f5307889da525c5d2044eb00df5ad4841e51f365[m
+Author: blass <blastolaba@gmail.com>
+Date:   Tue Oct 24 23:32:34 2023 -0300
+
+    habitacion
+
+[33mcommit d3bdef3247bac2826f803902d4228f2021d20e66[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Tue Oct 24 23:07:20 2023 -0300
+
+    cambio de fuente
+
+[33mcommit 07f83a5b8ec0ce47338721e605bff36c29e805d5[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Mon Oct 23 15:01:41 2023 -0300
+
+    agregado de reservas al presionar boton
+
+[33mcommit bdd3577fb7fa3361a0ff5d3b024e70742cf13f40[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Mon Oct 23 01:01:49 2023 -0300
+
+    arreglo responsive
+
+[33mcommit 17ab3c7a92fa89f63ed7bacdf44b6cf644f97f40[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Mon Oct 23 00:51:15 2023 -0300
+
+    agregado de responsive
+
+[33mcommit 9fcb3a71e46bce8d3a7962489800f6e551190ff1[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Mon Oct 23 00:41:37 2023 -0300
+
+    cambios de responsive
+
+[33mcommit a799f36a77e5856362b5f407f2251ccfe4978a76[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Oct 22 19:21:29 2023 -0300
+
+    cambios generales
+
+[33mcommit f7467b17f7effaa9c69a714c3fbea5ee16038d71[m
+Merge: a2d9c80 b5dea41
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Oct 22 19:09:21 2023 -0300
+
+    Merge branch 'main' into ramaJoel
+
+[33mcommit a2d9c80ff128d68659a4a6d126bfd191b9335768[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Oct 22 19:07:13 2023 -0300
+
+    agregado de bootstrap
+
+[33mcommit b5dea414017cad9255498b77153feca58241c80d[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Oct 22 19:05:26 2023 -0300
+
+    Arreglo de eventos
+
+[33mcommit 42a0c87b79db10301d497a2fc3408ccfdcc1242b[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Oct 22 16:49:17 2023 -0300
+
+    haciendo el boton de esconder en movil
+
+[33mcommit 7278e64b56e22de2d70a1c55a65590aeabac210f[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sun Oct 22 01:39:57 2023 -0300
+
+    probando responsive
+
+[33mcommit 351d1f83bc227feb49aa8b57b22defb9ea6131be[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Oct 21 18:32:46 2023 -0300
+
+    Seccion eventos creada
+
+[33mcommit 1ac0e404fd621dc807ac01dd6e0f4642b6952fd7[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Oct 21 01:35:20 2023 -0300
+
+    cambie color de boton reservar
+
+[33mcommit 787f28c08913f42b5cbd0a34f1520706f1dbc9fb[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Oct 21 00:59:38 2023 -0300
+
+    correji algunas cosas
+
+[33mcommit 6ada8fa8d0a14d7a3bca8dd8d2b0471090b6fdc3[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Oct 21 00:41:07 2023 -0300
+
+    agregado de boton
+
+[33mcommit b6b4984ecb4d566ed97482821e6ad9d64017a53b[m
+Author: Joel-Caliba01~ <joel819688@gmail.com>
+Date:   Sat Oct 21 00:29:10 2023 -0300
+
+    borre una linea sin uso
+
+[33mcommit 6c588e808d09c1aea8cd0fca29c0bef9a4c8ed41[m
+Author: Joel-Caliba01~ <joel819688
