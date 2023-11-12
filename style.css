@@ -958,7 +958,6 @@ h1,h2,h3,h4,h5{
 
 
 /* Habitacion Individual */
-/*habitaciones*/
 .habitacion-contenedor{
   margin: 0;
   padding: 0; 
@@ -978,10 +977,12 @@ h1,h2,h3,h4,h5{
   text-align: center;
 }
 .habitacion-contenedor1 .contenido-habitacion1 h1{
-  font-size: 50px;
   font-weight: 400;
-  padding: 50px;
+  padding-top: 10px;
   font-style: italic;
+
+  font-size: 3vw; /* Establece el tamaño del texto como el 5% del ancho del viewport */
+  max-width: 100%; /* Evita que el texto se desborde en pantallas pequeñas */
 }
 .habitacion-contenedor1 .contenido-habitacion1 h1 .titulo2{
   font-style: normal;
@@ -1190,14 +1191,6 @@ margin: 50px auto;
 }
 
 
-/* APARTADO DE RESERVAS */
-
-
-
-
-
-
-
 /* ventana emergente */
 .close-button{
   font-size: 25px;
@@ -1216,7 +1209,6 @@ margin: 50px auto;
   transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
   transform: translateY(60vh);
 }
-
 
 .ventanaEmergente{
   width: 100%;
@@ -1239,4 +1231,254 @@ margin: 50px auto;
   height: 90%;
   z-index: 11;
   overflow: auto;
+}
+
+
+/* APARTADO DE RESERVAS */
+
+
+
+/* CAROUSEL 1*/
+.carousel-body2 a{
+  text-decoration: none;
+}
+.carousel-body3 a{
+  text-decoration: none;
+}
+
+.carousel-body{
+  width: 100%;
+  max-width: 1450px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-contenedor{
+  width: 40vw; /* Puedes ajustar este valor según tus necesidades */
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+  position: relative;
+}
+.mySlides{
+  display: none;
+}
+.mySlides img{
+  width: 100%;
+}
+
+.prev,
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff; /* Color de las flechas */
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+  color: rgba(0, 0, 0, 0.8);
+}
+.elements{
+  text-align: center;
+}
+.quadrate{
+  cursor: pointer;
+  height: 4px;
+  width: 50px;
+  margin: 0 2px;
+  background-color: #717171;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 2px;
+}
+.active-carousel, .quadrate:hover{
+  background-color: black;
+}
+@media screen and (max-width:900px) {
+  .carousel-contenedor{
+      width: 100%;
+  }
+}
+@media screen and (max-width:500px) {
+  .carousel-contenedor{
+      width: 100%;
+  }
+  .prev,
+  .next{
+      padding: 5px;
+  }
+}
+
+
+/* carousel 2 */
+.carousel-body2{
+  width: 100%;
+  max-width: 1450px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-contenedor2{
+  width: 40vw; /* Puedes ajustar este valor según tus necesidades */
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+  position: relative;
+}
+.mySlides2{
+    display: none;
+}
+.mySlides2 img{
+    width: 100%;
+}
+.prev2,
+.next2{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff; /* Color de las flechas */
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev2:hover,
+.next2:hover{
+    color: rgba(0, 0, 0, 0.8);
+}
+.elements2{
+    text-align: center;
+}
+.quadrate2{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+}
+.active-carousel2, .quadrate2:hover{
+    background-color: #fff;
+}
+@media screen and (max-width:900px) {
+    .carousel-contenedor2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .carousel-contenedor2{
+        width: 100%;
+    }
+    .prev2,
+    .next2{
+        padding: 5px;
+    }
+}
+
+
+/* CAROUSEL 3 */
+.carousel-body3{
+  width: 100%;
+  max-width: 1450px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-contenedor3{
+  width: 40vw; /* Puedes ajustar este valor según tus necesidades */
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+  position: relative;
+}
+.mySlides3{
+  display: none;
+}
+.mySlides3 img{
+  width: 100%;
+}
+.prev3,
+.next3{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff; /* Color de las flechas */
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev3:hover,
+.next3:hover{
+  color: rgba(0, 0, 0, 0.8);
+}
+.elements3{
+  text-align: center;
+}
+.quadrate3{
+  cursor: pointer;
+  height: 4px;
+  width: 50px;
+  margin: 0 2px;
+  background-color: #717171;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 2px;
+}
+.active-carousel3, .quadrate3:hover{
+  background-color: #fff;
+}
+@media screen and (max-width:900px) {
+  .carousel-contenedor3{
+      width: 100%;
+  }
+}
+@media screen and (max-width:500px) {
+  .carousel-contenedor3{
+      width: 100%;
+  }
+  .prev3,
+  .next3{
+      padding: 5px;
+  }
 }
