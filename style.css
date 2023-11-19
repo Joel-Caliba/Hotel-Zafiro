@@ -4,6 +4,31 @@
 }
 body{
   overflow: auto;
+  background-image: linear-gradient(
+    150deg,
+    hsl(154deg 100% 97%) 0%,
+    hsl(155deg 100% 96%) 18%,
+    hsl(155deg 100% 95%) 29%,
+    hsl(155deg 100% 94%) 37%,
+    hsl(155deg 100% 93%) 43%,
+    hsl(155deg 100% 92%) 47%,
+    hsl(155deg 100% 91%) 51%,
+    hsl(156deg 100% 90%) 54%,
+    hsl(156deg 100% 89%) 57%,
+    hsl(156deg 100% 88%) 59%,
+    hsl(156deg 100% 87%) 61%,
+    hsl(156deg 100% 86%) 63%,
+    hsl(156deg 100% 85%) 65%,
+    hsl(156deg 100% 84%) 66%,
+    hsl(156deg 100% 82%) 68%,
+    hsl(156deg 100% 81%) 70%,
+    hsl(157deg 100% 80%) 73%,
+    hsl(157deg 100% 79%) 76%,
+    hsl(157deg 100% 77%) 79%,
+    hsl(157deg 100% 76%) 84%,
+    hsl(157deg 100% 75%) 90%,
+    hsl(158deg 100% 73%) 100%
+  );
 }
 h1,h2,h3,h4,h5{
     font-family: 'Poppins', sans-serif;
@@ -657,7 +682,8 @@ h1,h2,h3,h4,h5{
 }
 
 .habitacion-contenedor{
-  background-color: #F1FFF9;
+
+  margin-top: -40px;
 }
 .c-habitacion{
   /* probando */
@@ -667,7 +693,7 @@ h1,h2,h3,h4,h5{
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: #F1FFF9;
+
 }
 
 /* TARJETAS */
@@ -727,8 +753,8 @@ h1,h2,h3,h4,h5{
 .eventos h1{
   font-family: 'Raleway', sans-serif;
   color: #001F4E;
-  font-size: 2.5em;
-  font-weight: 400;
+  font-size: 3.5em;
+  font-weight: 500;
   letter-spacing: 0px;
   margin-top: 20px;
 }
@@ -746,7 +772,6 @@ h1,h2,h3,h4,h5{
   margin: 30px;
 }
 .eventos .background-evenetos .contenedor-eventos .contenedor-clubNocturno img{
-  clip-path: circle(38.6% at 50% 50%);
   max-width: 100%; /* La imagen se ajustará al ancho máximo del contenedor */
   max-height: 400px; /* Establece una altura máxima para la imagen */
   width: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
@@ -1590,4 +1615,47 @@ margin: 50px auto;
   .next3{
       padding: 5px;
   }
+}
+
+
+.btn {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+.btn span {
+  display: inline-block;
+  font-weight: 500;
+  transform: skew(21deg);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
