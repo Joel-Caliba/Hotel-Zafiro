@@ -34,6 +34,49 @@ h1,h2,h3,h4,h5{
     font-family: 'Poppins', sans-serif;
 }
 
+/* BOTONES DEL CUERPO */
+.btn-cuerpo {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+.btn-cuerpo span {
+  display: inline-block;
+  font-weight: 500;
+  transform: skew(21deg);
+}
+
+.btn-cuerpo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-cuerpo:hover {
+  color: #fff;
+}
+
+.btn-cuerpo:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
 /************************************************************ MENU ************************************************************/
 
 .menu-header .menu-bar{
@@ -772,6 +815,7 @@ h1,h2,h3,h4,h5{
   margin: 30px;
 }
 .eventos .background-evenetos .contenedor-eventos .contenedor-clubNocturno img{
+  clip-path: circle(38.6% at 50% 50%);
   max-width: 100%; /* La imagen se ajustará al ancho máximo del contenedor */
   max-height: 400px; /* Establece una altura máxima para la imagen */
   width: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
@@ -792,17 +836,19 @@ h1,h2,h3,h4,h5{
   max-width: 400px;
   margin: 0 auto;
 }
-.eventos a{
-  text-decoration: none;
+.boton-eventos{
+  text-align: center;
+}
+.eventos button{
   color: #D0B88C;
+  text-decoration: none;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
   margin-top: 15px;
 }
 .eventos a:hover{
   color: #b98c56;
 }
+
 
 
 
@@ -1615,47 +1661,4 @@ margin: 50px auto;
   .next3{
       padding: 5px;
   }
-}
-
-
-.btn {
-  background: #fff;
-  border: none;
-  padding: 10px 20px;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  width: 120px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transform: skew(-21deg);
-}
-
-.btn span {
-  display: inline-block;
-  font-weight: 500;
-  transform: skew(21deg);
-}
-
-.btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 100%;
-  left: 0;
-  background: rgb(20, 20, 20);
-  opacity: 0;
-  z-index: -1;
-  transition: all 0.5s;
-}
-
-.btn:hover {
-  color: #fff;
-}
-
-.btn:hover::before {
-  left: 0;
-  right: 0;
-  opacity: 1;
 }
