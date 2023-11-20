@@ -186,3 +186,19 @@ function showSlides3(n){
     slides[slideIndex3-1].style.display = "block";
     quadrates[slideIndex3-1].className += " active-carousel3";
 }
+
+
+// ventana emergente para Evento Club Nocturno
+const ventanaEmergenteCNocturno = document.getElementById("ventanaEmergenteCNocturno"),
+    openButtoncNocturno = document.getElementById("open-button-cNocturno"),
+    closeButtoncNocturno = document.getElementById("close-button-cNocturno");
+
+openButtoncNocturno.addEventListener("click", () => {
+    ventanaEmergenteCNocturno.style.display = "flex";
+    document.body.style.overflow = "hidden";
+});
+
+closeButtoncNocturno.addEventListener("click", () => {
+    ventanaEmergenteCNocturno.style.display = "none";
+    document.body.style.overflow = "auto";
+});
