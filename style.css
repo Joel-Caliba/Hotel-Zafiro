@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 body{
   overflow: auto;
@@ -30,9 +31,7 @@ body{
     hsl(158deg 100% 73%) 100%
   );
 }
-h1,h2,h3,h4,h5{
-    font-family: 'Poppins', sans-serif;
-}
+
 
 /* BOTONES DEL CUERPO */
 .btn-cuerpo {
@@ -48,7 +47,7 @@ h1,h2,h3,h4,h5{
   transform: skew(-21deg);
 }
 
-.btn-cuerpo span {
+.btn-cuerpo a {
   display: inline-block;
   font-weight: 500;
   transform: skew(21deg);
@@ -839,7 +838,7 @@ h1,h2,h3,h4,h5{
 .boton-eventos{
   text-align: center;
 }
-.eventos button{
+.eventos a{
   color: #D0B88C;
   text-decoration: none;
   font-weight: 700;
@@ -869,7 +868,7 @@ h1,h2,h3,h4,h5{
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
 .contacto {
-  font-family: Roboto;
+  font-family: 'Raleway', sans-serif;
 }
 
 .contacto .footer-distributed{

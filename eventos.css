@@ -4,11 +4,41 @@
     padding: 0;
 }
 h1,h2,h3,h4,h5{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
+body{
+    overflow: auto;
+    background-image: linear-gradient(
+      150deg,
+      hsl(154deg 100% 97%) 0%,
+      hsl(155deg 100% 96%) 18%,
+      hsl(155deg 100% 95%) 29%,
+      hsl(155deg 100% 94%) 37%,
+      hsl(155deg 100% 93%) 43%,
+      hsl(155deg 100% 92%) 47%,
+      hsl(155deg 100% 91%) 51%,
+      hsl(156deg 100% 90%) 54%,
+      hsl(156deg 100% 89%) 57%,
+      hsl(156deg 100% 88%) 59%,
+      hsl(156deg 100% 87%) 61%,
+      hsl(156deg 100% 86%) 63%,
+      hsl(156deg 100% 85%) 65%,
+      hsl(156deg 100% 84%) 66%,
+      hsl(156deg 100% 82%) 68%,
+      hsl(156deg 100% 81%) 70%,
+      hsl(157deg 100% 80%) 73%,
+      hsl(157deg 100% 79%) 76%,
+      hsl(157deg 100% 77%) 79%,
+      hsl(157deg 100% 76%) 84%,
+      hsl(157deg 100% 75%) 90%,
+      hsl(158deg 100% 73%) 100%
+    );
+  }
+
+
 
 .eventos .eventos-contenedor .eventos-titulo{
     text-align: center;
@@ -110,4 +140,23 @@ p{
 .img-derecha {
     float: right;
     margin-left: 20px; /* Ajusta el margen izquierdo según tus preferencias */
+}
+
+
+
+#svg-container {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para colocar el contenedor detrás del contenido */
+}
+#svg-container3 {
+    position: absolute;
+    top: 254%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para colocar el contenedor detrás del contenido */
 }
