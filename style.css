@@ -47,7 +47,7 @@ body{
   transform: skew(-21deg);
 }
 
-.btn-cuerpo a {
+.btn-cuerpo span {
   display: inline-block;
   font-weight: 500;
   transform: skew(21deg);
