@@ -1676,8 +1676,9 @@ margin: 50px auto;
 
 
 
+
 /* EVENTOS ventana emergente CLUB NOCTURNO */
-.eventos{
+.eventos1{
   overflow: auto;
   background-image: linear-gradient(
     150deg,
@@ -1706,31 +1707,30 @@ margin: 50px auto;
   );
 }
 
-.eventos .eventos-contenedor .eventos-titulo{
-  text-align: center;
-}
-.eventos .eventos-contenedor .eventos-titulo .subtitulo{
-  margin: 50px;
-  font-weight: 300;
+.eventos1{
+  width: 90%;
+  height: 90%;
 }
 .eventos .eventos-contenedor .eventos-titulo h1{
+  text-align: center;
   margin-bottom: 30px;
-  font-size: 55px;
+  font-size: 3rem;
 }
-.eventos .eventos-contenedor .eventos-titulo .parrafo{
-  font-size: 15px;
-  max-width: 50vw; /* Establece el ancho máximo deseado para el párrafo */
-  margin: 0 auto; /* Centra el párrafo horizontalmente dentro del div */
+.eventos .eventos-contenedor .eventos-titulo .subtitulo p{
+  text-align: center;
 }
 
 
+
+
+/*************** CONTENIDO DENTRO DE VENTANA EMERGENTE ***************/
 /* CLUB NOCTURNO */
 .c-cNocturno{
   margin: 30px;
   display: flex;
   justify-content: space-between;
 }
-.img-evento {
+.c-cNocturno .img-evento {
   height: 70vh;
 }
 .c-eventos .c-cNocturno .c-texto{
@@ -1739,4 +1739,82 @@ margin: 50px auto;
 .c-eventos .c-cNocturno .c-texto h1{
   text-align: center;
   margin-bottom: 40px;
+  font-size: 3rem
+}
+.eventos1 .c-texto p{
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* PIANO BAR */
+.c-pianoBar{
+  margin: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.img-evento {
+  height: 70vh;
+}
+.c-eventos .c-pianoBar .c-texto{
+  margin: 20px;
+}
+.c-eventos .c-pianoBar .c-texto h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.img-derecha {
+  float: right;
+  margin-left: 20px; /* Ajusta el margen izquierdo según tus preferencias */
+}
+
+/* SALON DIVERSION */
+.c-salonDiversion{
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.img-evento {
+  height: 70vh;
+}
+.c-eventos .c-salonDiversion .c-texto{
+  margin: 20px;
+}
+.c-eventos .c-salonDiversion .c-texto h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* REUNIONES */
+.c-reuniones{
+  margin: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.img-evento {
+  height: 70vh;
+}
+.c-eventos .c-reuniones .c-texto{
+  margin: 20px;
+}
+.c-eventos .c-reuniones .c-texto h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.img-derecha {
+  float: right;
+  margin-left: 20px; /* Ajusta el margen izquierdo según tus preferencias */
+}
+
+@media (max-width: 1000px){
+  .c-cNocturno{
+    flex-direction: column;
+  }
+  .c-cNocturno .img-evento {
+    /* ADAPTAR LA IAMGEN PARA MOVIL */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
 }

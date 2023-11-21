@@ -202,3 +202,49 @@ closeButtoncNocturno.addEventListener("click", () => {
     ventanaEmergenteCNocturno.style.display = "none";
     document.body.style.overflow = "auto";
 });
+
+// ventana emergente para Evento Piano Bar
+const ventanaEmergentePBar = document.getElementById("ventanaEmergentePBar"),
+    openButtoncPBar = document.getElementById("open-button-PBar"),
+    closeButtoncPBar = document.getElementById("close-button-PBar");
+
+    openButtoncPBar.addEventListener("click", () => {
+    ventanaEmergentePBar.style.display = "flex";
+    document.body.style.overflow = "hidden";
+});
+
+closeButtoncPBar.addEventListener("click", () => {
+    ventanaEmergentePBar.style.display = "none";
+    document.body.style.overflow = "auto";
+});
+
+// ventana emergente para Evento Salon Diversion
+const ventanaEmergenteSDiversion = document.getElementById("ventanaEmergenteSDiversion"),
+    openButtoncSDiversion = document.getElementById("open-button-SDiversion"),
+    closeButtoncSDiversion = document.getElementById("close-button-SDiversion");
+
+    openButtoncSDiversion.addEventListener("click", () => {
+    ventanaEmergenteSDiversion.style.display = "flex";
+    document.body.style.overflow = "hidden";
+});
+
+closeButtoncSDiversion.addEventListener("click", () => {
+    ventanaEmergenteSDiversion.style.display = "none";
+    document.body.style.overflow = "auto";
+});
+
+
+// ventana emergente para Evento Salon Diversion
+const ventanaEmergenteSReunion = document.getElementById("ventanaEmergenteSReunion"),
+    openButtoncSReunion = document.getElementById("open-button-SReunion"),
+    closeButtoncSReunion = document.getElementById("close-button-SReunion");
+
+    openButtoncSReunion.addEventListener("click", () => {
+    ventanaEmergenteSReunion.style.display = "flex";
+    document.body.style.overflow = "hidden";
+});
+
+closeButtoncSReunion.addEventListener("click", () => {
+    ventanaEmergenteSReunion.style.display = "none";
+    document.body.style.overflow = "auto";
+});
