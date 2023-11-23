@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prueba.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="reserva" id="reserva">
+        <div class="contenedor-reserva">
+            <h1>RESERVAR</h1>
+            <div class="reservar-contenedor">
+                <h2>Nombre y Apellido</h2>
+                <div class="c-nombre">
+                    <input type="text" name="nombre" id="nombre" class="r-nombre" placeholder="Nombre" required>
+                    <input type="text" name="nombre" id="nombre" class="r-nombre" placeholder="Apellido" required>
+                </div>
+
+
+                <h2>Tipo de habitacion</h2>
+                <div class="input-choice">
+                    <i class="fa-solid fa-circle-dot"></i>
+                </div>
+
+
+                <h2>Cantidad de Personas</h2>
+                <select id="estadia">
+                    <option value="1" label="1">
+                    <option value="2" label="2">
+                    <option value="3" label="3">
+                    <option value="4" label="4">
+                    <option value="5" label="5">
+                </select>
+
+                <h2>Fecha de Llegada</h2>
+                <input type="date" id="llegada" name="fecha-llegada">
+
+                <h2>Fecha de Salida</h2>
+                <input type="date" id="llegada" name="fecha-llegada">
+            </div>
+
+            <button>ENVIAR</button>
+        </div>
+    </section>
+</body>
+</html>

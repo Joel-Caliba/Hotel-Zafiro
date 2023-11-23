@@ -1,3 +1,13 @@
+// Mostrar backgroun del nav al bajar
+
+window.addEventListener("scroll", function(){
+    var header = document.querySelector(".header");
+    header.classList.toggle("abajo", window.scrollY>0);
+})
+
+
+
+
 // NAV DE MOVIL
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");

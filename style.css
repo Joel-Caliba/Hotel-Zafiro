@@ -90,7 +90,7 @@ body{
 }
 
 .menu-header .header{
-    background-color: #d7fff0;
+    background-color: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,6 +100,7 @@ body{
     height: 10%;
     overflow: auto;
 }
+
 .menu-header .imagen{
     background-size: cover;
     background-image: url("img/hotel.jpg");
@@ -115,9 +116,12 @@ body{
 .menu-header .logo img{
     width: 100px;
 }
+.menu-header #button-text{
+    color: #E6DAC2;
+}
 
-.menu-header .header a, #botonCuenta{
-    color: #5e4230;
+.menu-header .header a{
+    color: #E6DAC2;
     font-size: 18px;
     text-decoration: none;
     margin: 0 20px;
@@ -208,6 +212,7 @@ body{
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
+    color: #E6DAC2;
    }
    
    button:hover .circle {
@@ -230,6 +235,17 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1; /* Asegura que la sección "cuenta" esté en la parte superior */
+}
+
+/* HEADER CUANDO SE HACE SCROLL PARA ABAJO */
+.abajo{
+  background-color: #88FFD1;
+}
+.menu-header .abajo a{
+  color: #006d54;
+}
+.menu-header .abajo #button-text{
+  color: #006d54;
 }
 
 /*********************************** INICIO ***********************************/
@@ -317,7 +333,7 @@ body{
 @media (max-width: 1000px){
     /* Tamaño logo HZ en movil */
     .menu-header .logo img{
-      width: 70%;
+      width: 50%;
       max-width: 100%;
     }
     .menu-header .logo{
@@ -333,6 +349,7 @@ body{
         position: fixed;
         flex-direction: column;
         right: 0;
+        background-color: #88FFD1;
 
         opacity: 0;
         visibility: hidden;
@@ -344,6 +361,7 @@ body{
     }
 
     .menu-header .header a{
+        color: #006d54;
         display: flex;
         width: 100%;
         float: none;
@@ -351,6 +369,9 @@ body{
         border-bottom:1px solid #5E4230;
         padding-bottom: 10px;
     }  
+    .menu-header .header #button-text{
+        color: #006d54;
+    }
     /* Mostrar iconos al lado del texto */
     .menu-header .header span2{
         display: flex;
@@ -382,7 +403,7 @@ body{
         font-size: 24px;
         border: none;
         background-color: transparent;
-        padding: 10px; /* Ajusta el relleno según tus necesidades */
+        padding: 10px;
         cursor: pointer;
         transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
       }
@@ -1561,3 +1582,4 @@ margin: 50px auto;
     margin: auto;
   }
 }
+
