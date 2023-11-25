@@ -576,6 +576,7 @@ body{
 }
 .eventos .background-evenetos .contenedor-eventos .contenedor-clubNocturno{
   margin: 30px;
+  text-align: center;
 }
 .eventos .background-evenetos .contenedor-eventos .contenedor-clubNocturno img{
   clip-path: circle(38.6% at 50% 50%);
