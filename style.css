@@ -39,9 +39,9 @@ body{
   border: none;
   padding: 10px 20px;
   display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  width: 120px;
+  font-size: 20px;
+  font-weight: 800;
+  width: auto;
   text-transform: uppercase;
   cursor: pointer;
   transform: skew(-21deg);
@@ -503,7 +503,6 @@ body{
 }
 
 /* TARJETAS */
-
 .content-section{
   display: flex;
   justify-content: center;
@@ -523,6 +522,7 @@ body{
 .content-section .card h2{
   margin: 15px 0px;
   font-size: 28px;
+  font-weight: 600;
 }
 .content-section .card p{
   font-size: 16px;
@@ -536,10 +536,94 @@ body{
   font-weight: 600;
 }
 
+.container, .content-section, .card .btn-bg{
+  display: flex;
+  justify-content: center;
+}
+.info-habitaciones{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.habitacion .info-habitaciones p{
+  font-size: 1vw;
+}
+.btn-masInfo{
+  display: flex;
+}
+
+/* Boton mas informacion */
+.habitacion .container .content-section .card .btn-masInfo button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #286BAC;
+  text-align: center;
+  font-size: 1.1vw;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-weight: 600;
+ }
+ 
+ .habitacion .container .content-section .card .btn-masInfo button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ .habitacion .container .content-section .card .btn-masInfo button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ .habitacion .container .content-section .card .btn-masInfo button:hover span {
+  padding-right: 15px;
+ }
+ 
+ .habitacion .container .content-section .card .btn-masInfo button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
+ /* Precio */
+.btn-masInfo{
+  justify-content: space-between;
+}
+.habitacion .btn-masInfo p{
+  font-size: 0.7vw;
+}
+.btn-masInfo p span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
+  font-weight: 800;
+  width: auto;
+}
+
 @media (max-width: 1000px){
   .c-habitacion{
       flex-direction: column;
   }
+
+    /* texto del card de habitaciones */
+    .habitacion .info-habitaciones p{
+      font-size: 15px;
+    }
+    .habitacion .container .content-section .card .btn-masInfo button {
+      font-size: 17px;
+     }
+     
+    .habitacion .btn-masInfo p{
+      font-size: 12px;
+    }
+    .btn-masInfo p span{
+      font-size: 40px;
+    }
 }
 
 @media (max-width: 1000px){
@@ -1183,11 +1267,6 @@ margin: 50px auto;
   overflow: auto;
 }
 
-
-/* APARTADO DE RESERVAS */
-
-
-
 /* CAROUSEL 1*/
 .carousel-body2 a{
   text-decoration: none;
@@ -1572,10 +1651,35 @@ margin: 50px auto;
 }
 
 @media (max-width: 1000px){
-  .c-cNocturno{
+  .c-cNocturno, .c-pianoBar, .c-salonDiversion, .c-reuniones{
     flex-direction: column;
   }
+  /* Club Nocturno */
   .c-cNocturno .img-evento {
+    /* ADAPTAR LA IAMGEN PARA MOVIL */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  /* Piano Bar */
+  .c-pianoBar .img-evento {
+    /* ADAPTAR LA IAMGEN PARA MOVIL */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  /* Salon Diversion */
+  .c-salonDiversion .img-evento {
+    /* ADAPTAR LA IAMGEN PARA MOVIL */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  /* Salon Reunion */
+  .c-reuniones .img-evento {
     /* ADAPTAR LA IAMGEN PARA MOVIL */
     max-width: 100%;
     height: auto;
