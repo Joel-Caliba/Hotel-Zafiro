@@ -24,7 +24,7 @@ cerrar.addEventListener("click", () => {
 // Inicio de sesion
 const botonCuenta = document.getElementById("button-text");
     botonCuenta.addEventListener("click", ()=>{
-        var loginHTML = window.open("Login/index.html");
+        var loginHTML = window.open("LoginRegister/login.html");
     })
 
 
