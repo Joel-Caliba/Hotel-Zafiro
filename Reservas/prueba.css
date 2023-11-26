@@ -24,6 +24,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 1; /* Z-index más alto para el contenedor para que se muestre arriba de la img de fondo */
 }
@@ -51,10 +52,15 @@ body{
     align-items: center;
 }
 .reserva .contenedor-reserva h1{
-    margin: 50px;
+    margin: 5px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 700;
 }
 .reserva .contenedor-reserva h2{
     margin: 25px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .fa-solid{
@@ -68,46 +74,51 @@ body{
     display: flex;
     gap: 0px 30px;
 }
-.inputGroup {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 1em 0 1em 0;
-    max-width: 190px;
-    position: relative;
-  }
-  
-  .inputGroup input {
-    font-size: 100%;
-    padding: 0.8em;
-    outline: none;
-    border: 2px solid #005947;
-    background-color: transparent;
-    border-radius: 20px;
-    width: 100%;
-  }
-  
-  .inputGroup label {
-    font-size: 100%;
-    position: absolute;
-    left: 0;
-    padding: 0.8em;
-    margin-left: 0.5em;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    color: black;
-    font-weight: 600;
-  }
-  
-  .inputGroup :is(input:focus, input:valid)~label {
-    transform: translateY(-50%) scale(.9);
-    margin: 0em;
-    margin-left: 1.3em;
-    padding: 0.4em;
-    background-color: transparent;
-  }
-  
-  .inputGroup :is(input:focus, input:valid) {
-    border-color: #00ad7f;
-  }
+
+.input-form {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input {
+  border: solid 1.9px #00ad7f;
+  border-radius: 1.3rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000000;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.textUser {
+  position: absolute;
+  left: 15px;
+  color: #666666;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.input:focus, input:valid {
+  outline: none;
+  box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+  background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+  transition: background 4s ease-in-out;
+}
+
+.input:focus ~ label, input:valid ~ label {
+  transform: translateY(-95%) scale(0.9);
+  padding: 0 .2em;
+  color: #000000be;
+  left: 80px;
+}
+
+.input:hover {
+  border: solid 1.9px #000002;
+  transform: scale(1.03);
+  box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+  transition: border-color 1s ease-in-out;
+}
 
 
 /******************** Tipo de Habitacion ********************/
@@ -132,7 +143,7 @@ body{
   }
   
   .container label input:checked + span {
-    background-color: #1becaf;
+    background-color: #00ad7f;
     color: black;
     font-weight: 600;
   }
@@ -169,33 +180,40 @@ body{
   
 
   /******************** Cantidad de Personas ********************/
-.cant-personas .opciones select{
-    font-size: 100%;
-    padding: 0.8em;
-    outline: none;
-    border: 2px solid #005947;
-    background-color: transparent;
-    border-radius: 20px;
+  .cant-personas {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .opciones {
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  select {
     width: 60%;
-    text-align: center;
-    font-weight: 600;
-    color: rgb(100, 100, 100);
-    cursor: pointer;
-}
-
-.cant-personas select:focus ~ h2,
-.cant-personas select:valid ~ h2 {
-    transform: translateY(-50%) scale(.9);
-    margin: 0em;
-    margin-left: 1.3em;
-    padding: 0.4em;
-    background-color: #E1FFF2;
-}
-
-.cant-personas select:focus,
-.cant-personas select:valid {
-    border-color: #00ad7f;
-}
+    padding: 10px;
+    font-size: 1rem;
+    border: solid 1.9px #00ad7f;
+    border-radius: 1.3rem;
+    background: none;
+    color: #000000;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  select:focus, select:valid {
+    outline: none;
+    box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+    background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+    transition: background 4s ease-in-out;
+  }
+  
+  select:hover {
+    border: solid 1.9px #000002;
+    transform: scale(1.03);
+    box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+    transition: border-color 1s ease-in-out;
+  }
+  
 
 /******************** fecha-llegada-salida ********************/
 .fecha-llegada-salida .c-fls{
@@ -204,33 +222,62 @@ body{
     gap: 0px 30px;
 }
 
-.fecha-llegada-salida .inputGroup :is(input:focus, input:valid)~label{
-  background-color: #B5FFE1;
+.fecha-llegada-salida .input-form :is(input:focus, input:valid)~label{
+  background-color: transparent;
 }
-.fecha-llegada-salida .inputGroup input{
-  border: 2px solid rgb(200, 200, 200);
-}
-.fecha-llegada-salida .inputGroup #llegada{
-  cursor: pointer;
-}
-.fecha-llegada-salida .inputGroup :is(input:focus, input:valid) {
-  border-color: #00ad7f;
-}
-/******************** Boton Siguiente ********************/
-.btn-siguiente{
-  display: flex;
-  width: 100%;
-  margin: 50px 0px;
-}
-.btn-siguiente a{
-  font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid #005947;
+.fecha-llegada-salida .input-form input{
+  border: 2px solid #00ad7f;   
   color: black;
   font-weight: 600;
-  background-color: transparent;
-  border-radius: 20px;
-  width: 100%;
+}
+.fecha-llegada-salida .input-form #llegada, #salida{
   cursor: pointer;
+}
+.fecha-llegada-salida .input-form :is(input:focus, input:valid) {
+  border-color: #00ad7f;
+}
+
+.textDate{
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+/******************** Boton Siguiente ********************/
+
+.reserva .reservar-contenedor button {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #00ad7f;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+.reserva .reservar-contenedorbutton:hover {
+  background: #00ad7f;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+/* CENTRAR BOTON SIGUIENTE */
+.reservar-contenedor button {
+  display: block;
+  margin: 0 auto;
 }
