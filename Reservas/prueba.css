@@ -5,32 +5,42 @@
 }
 body{
     overflow: auto;
-    background-image: linear-gradient(
-      150deg,
-      hsl(154deg 100% 97%) 0%,
-      hsl(155deg 100% 96%) 18%,
-      hsl(155deg 100% 95%) 29%,
-      hsl(155deg 100% 94%) 37%,
-      hsl(155deg 100% 93%) 43%,
-      hsl(155deg 100% 92%) 47%,
-      hsl(155deg 100% 91%) 51%,
-      hsl(156deg 100% 90%) 54%,
-      hsl(156deg 100% 89%) 57%,
-      hsl(156deg 100% 88%) 59%,
-      hsl(156deg 100% 87%) 61%,
-      hsl(156deg 100% 86%) 63%,
-      hsl(156deg 100% 85%) 65%,
-      hsl(156deg 100% 84%) 66%,
-      hsl(156deg 100% 82%) 68%,
-      hsl(156deg 100% 81%) 70%,
-      hsl(157deg 100% 80%) 73%,
-      hsl(157deg 100% 79%) 76%,
-      hsl(157deg 100% 77%) 79%,
-      hsl(157deg 100% 76%) 84%,
-      hsl(157deg 100% 75%) 90%,
-      hsl(158deg 100% 73%) 100%
-    );
   }
+
+
+.reserva .img {
+  background-image: url("img/fondo-hotel.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  filter: brightness(0.6);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1; /* Z-index más bajo para la imagen de fondo */
+}
+
+.reserva .contenedor-reserva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Z-index más alto para el contenedor para que se muestre arriba de la img de fondo */
+}
+
+.reservar-contenedor{
+  text-align: center;
+  padding: 30px;
+  background-color: #00d49a;
+  
+  /* hacer transparente el contenedor */
+  backdrop-filter: blur(3px) saturate(147%);
+  -webkit-backdrop-filter: blur(3px) saturate(147%);
+  background-color: rgba(203, 255, 233, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
 
 .reserva{
   height: auto;
@@ -53,9 +63,7 @@ body{
 
 
 /******************** Nombre y Apellido ********************/
-.reservar-contenedor{
-    text-align: center;
-}
+
 .c-nombre{
     display: flex;
     gap: 0px 30px;
@@ -71,7 +79,7 @@ body{
     font-size: 100%;
     padding: 0.8em;
     outline: none;
-    border: 2px solid rgb(200, 200, 200);
+    border: 2px solid #005947;
     background-color: transparent;
     border-radius: 20px;
     width: 100%;
@@ -85,7 +93,7 @@ body{
     margin-left: 0.5em;
     pointer-events: none;
     transition: all 0.3s ease;
-    color: rgb(100, 100, 100);
+    color: black;
     font-weight: 600;
   }
   
@@ -94,15 +102,15 @@ body{
     margin: 0em;
     margin-left: 1.3em;
     padding: 0.4em;
-    background-color: #E1FFF2;
+    background-color: transparent;
   }
   
   .inputGroup :is(input:focus, input:valid) {
-    border-color: rgb(150, 150, 200);
+    border-color: #00ad7f;
   }
 
 
-/******************** TIPO DE HABITACION ********************/
+/******************** Tipo de Habitacion ********************/
 .container form {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +138,7 @@ body{
   }
   
   .container label input:checked + span:before {
-    box-shadow: inset 0 0 0 0.4375em #008a69;
+    box-shadow: inset 0 0 0 0.4375em #005947;
   }
   
   .container label span {
@@ -165,10 +173,10 @@ body{
     font-size: 100%;
     padding: 0.8em;
     outline: none;
-    border: 2px solid rgb(200, 200, 200);
+    border: 2px solid #005947;
     background-color: transparent;
     border-radius: 20px;
-    width: 100%;
+    width: 60%;
     text-align: center;
     font-weight: 600;
     color: rgb(100, 100, 100);
@@ -186,7 +194,7 @@ body{
 
 .cant-personas select:focus,
 .cant-personas select:valid {
-    border-color: rgb(150, 150, 200);
+    border-color: #00ad7f;
 }
 
 /******************** fecha-llegada-salida ********************/
@@ -206,7 +214,7 @@ body{
   cursor: pointer;
 }
 .fecha-llegada-salida .inputGroup :is(input:focus, input:valid) {
-  border-color: rgb(150, 150, 200);
+  border-color: #00ad7f;
 }
 /******************** Boton Siguiente ********************/
 .btn-siguiente{
@@ -218,7 +226,7 @@ body{
   font-size: 100%;
   padding: 0.8em;
   outline: none;
-  border: 2px solid black;
+  border: 2px solid #005947;
   color: black;
   font-weight: 600;
   background-color: transparent;
