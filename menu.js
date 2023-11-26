@@ -1,11 +1,9 @@
-// Mostrar backgroun del nav al bajar
+// Mostrar background del nav al bajar
 
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
     header.classList.toggle("abajo", window.scrollY>0);
 })
-
-
 
 
 // NAV DE MOVIL
@@ -75,7 +73,14 @@ closeButtonFamiliar.addEventListener("click", () => {
 });
 
 
+// Funcion para que al presionar el boton reserva de abra un html
 
+var btnReservar = document.getElementById('open-reserva');
+
+btnReservar.addEventListener('click', function() {
+
+    window.location.href = 'Reservas/reserva.html';
+});
 
 
 // CAROUSEL 1
@@ -104,7 +109,6 @@ function showSlides(n){
     quadrates[slideIndex-1].className += " active-carousel";
 }
 
-
 // carousel 2
 let slideIndex2 = 1;
 showSlides2(slideIndex2)
@@ -130,7 +134,6 @@ function showSlides2(n){
     slides[slideIndex2-1].style.display = "block";
     quadrates[slideIndex2-1].className += " active-carousel";
 }
-
 
 // carousel 3
 let slideIndex3 = 1;
