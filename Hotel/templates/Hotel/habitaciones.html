@@ -1,0 +1,94 @@
+{% extends "Hotel/base.html" %}
+{% load static %}
+{% block content %}
+<!-------------------- HABITACION -------------------->
+<section class="habitacion" id="habitacion">
+    <div class="habitacion-contenedor">
+        <div class="contenido-habitacion">
+            <h1>NUESTRAS <span class="titulo2">HABITACIONES</span></h1>
+        </div>
+        <div class="c-habitacion">
+            {% for p in habitaciones %}
+                    <!-- ventana emergente -->
+                <div class="ventanaEmergente" id="ventanaEmergente">
+                    <div class="ve-contenedor" id="ve-contenedor">
+                        <!-- Boton Cerrar -->
+                        <button class="close-button fa-solid fa-xmark" id="close-button"></button>
+                     <!-- HABITACION INDIVIDUAL--> 
+                        <section class="habitacion1" id="habitacion1">
+                            <div class="habitacion-contenedor1">
+                                <div class="contenido-habitacion1">
+                                    <h1><span class="titulo2">{{p.titulo}}</span></h1>
+                                </div>
+                                <div class="c-habitacion1">
+                                    <section class="section.carousel">
+                                        <div class="container1">
+                                            <!-- CAROUSEL 1 -->
+                                            <div class="carousel-body">
+                                                <div class="carousel-contenedor">
+                                                    <div class="mySlides">
+                                                        <img src="{{p.imagen2.url}}" alt="imagen-1">
+                                                    </div>
+                                                    <div class="mySlides">
+                                                        <img src="{{p.imagen3.url}}" alt="">
+                                                    </div>
+                                                    <div class="mySlides">
+                                                        <img src="{{p.imagen4.url}}" alt="">
+                                                    </div>                                                
+                                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>                                      
+                                                    <div class="elements">
+                                                        <span class="quadrate" onclick="currentSlide(1)"></span>
+                                                        <span class="quadrate" onclick="currentSlide(2)"></span>
+                                                        <span class="quadrate" onclick="currentSlide(3)"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="descripcion">
+                                                <div class="linea"></div>
+                                                <h1>Descripcion</h1>
+                                                <p class="t-descripcion">{{p.descripcion}}</p>
+                                                <div class="linea"></div>
+                                                <h1>Caracteristicas</h1>
+                                                <ul class="l-caracteristicas">
+                                                    {{ p.detalle|linebreaksbr }}
+                                                </ul>
+                                                <div class="linea"></div>
+                                            </div>     
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="content-section">
+                        <div class="card">
+                            <img src="{{p.imagen1.url}}" alt="">
+                            <h2>{{p.titulo}}</h2>
+                            <div class="info-habitaciones">
+                                <p>Max 2 personas • 35m²</p>
+                                <p><span><i class="fa-solid fa-bed"></i></span> 1 x Cama doble</p>
+                            </div>                       
+                            <div class="btn-masInfo">
+                                <button class="btn btn-link" id="open-button"><span>Mas información</span></button> 
+                                <p>1 noche | desde <span>{{p.precio}}</span></p>
+                            </div>
+                            <div class="btn-bg bg-1">
+                                <a href="{% url 'reservacion:reserva' %}">
+                                    <button class="btn-cuerpo btn-outline-dark" id="open-reserva"><span>Reservar</span></button>
+                                </a>
+                            </div>
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

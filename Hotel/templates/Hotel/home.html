@@ -1,0 +1,23 @@
+{% extends 'Hotel/base.html' %}
+{% block content %}
+<div class="imagen">
+</div>
+<div class="inicio">
+    <div class="inicio-contenedor">
+        <h2>Bienvenido a</h2>
+        <h1>HOTEL ZAFIRO</h1>
+        <h2>Salta Capital</h2>
+        <div class="boton">
+            <a class="btn" href="#habitacion">RESERVAR</a>
+        </div>
+    </div>
+</div> 
+
+{% endblock %}
+
+{% if request.user.is_authenticated %}
+<h3>
+    {{user.username | upper }}, bienvenido
+</h3>
+
+{% endif %}

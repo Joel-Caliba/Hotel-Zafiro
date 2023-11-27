@@ -1,0 +1,239 @@
+/******************** CONTACTO ********************/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+.contacto {
+font-family: Roboto;
+}
+
+.contacto .footer-distributed{
+background: #444;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+font: bold 16px sans-serif;
+text-align: left;
+padding: 50px 60px 40px;
+overflow: hidden;
+}
+
+/* Footer left */
+
+.contacto .footer-distributed .footer-left{
+float: left;
+}
+
+/* The company logo */
+
+.contacto .footer-distributed h3{
+color:  #ffffff;
+font: normal 36px 'Roboto', cursive;
+margin: 0 0 10px;
+}
+
+.contacto .footer-distributed h3 span{
+color:  #5383d3;
+}
+
+/* Footer links */
+
+.contacto .footer-distributed .footer-links{
+color:  #ffffff;
+margin: 0 0 10px;
+padding: 0;
+}
+
+.contacto .footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+}
+
+.contacto .footer-distributed .footer-company-name{
+color:  #8f9296;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+/* Footer social icons */
+
+.contacto .footer-distributed .footer-icons{
+margin-top: 40px;
+}
+
+.contacto .footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+.contacto .footer-distributed .footer-icons a:hover{
+color: #b98c56;
+}
+
+/* Footer Right */
+
+.contacto .footer-distributed .footer-right{
+float: right;
+}
+
+.contacto .footer-distributed .footer-right p{
+display: flex;
+vertical-align: top;
+margin: 15px 42px 0 0;
+color: #ffffff;
+margin-bottom: 20px;
+}
+
+/* The contact form */
+
+.contacto .footer-distributed form{
+display: inline-block;
+}
+
+.contacto .footer-distributed form input,
+.contacto .footer-distributed form textarea{
+display: block;
+border-radius: 3px;
+box-sizing: border-box;
+background-color:  #1f2022;
+box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+border: none;
+resize: none;
+
+font: inherit;
+font-size: 14px;
+font-weight: normal;
+color:  #d1d2d2;
+
+width: 400px;
+padding: 18px;
+}
+
+.contacto .footer-distributed ::-webkit-input-placeholder {
+color:  #5c666b;
+}
+
+.contacto .footer-distributed ::-moz-placeholder {
+color:  #5c666b;
+opacity: 1;
+}
+
+.contacto .footer-distributed :-ms-input-placeholder{
+color:  #5c666b;
+}
+
+
+.contacto .footer-distributed form input{
+height: 55px;
+margin-bottom: 15px;
+}
+
+.contacto .footer-distributed form textarea{
+height: 100px;
+margin-bottom: 20px;
+}
+
+.contacto .footer-distributed form button{
+border-radius: 3px;
+background-color:  #33383b;
+color: #ffffff;
+border: 0;
+padding: 15px 50px;
+font-weight: bold;
+float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+.contacto .footer-distributed {
+  font: bold 14px sans-serif;
+}
+
+.contacto .footer-distributed .footer-company-name{
+  font-size: 12px;
+}
+
+.contacto .footer-distributed form input,
+.contacto .footer-distributed form textarea{
+  width: 250px;
+}
+
+.contacto .footer-distributed form button{
+  padding: 10px 35px;
+}
+
+}
+
+@media (max-width: 800px) {
+
+.contacto .footer-distributed{
+  padding: 30px;
+}
+
+.contacto .footer-distributed .footer-left,
+.contacto .footer-distributed .footer-right{
+  float: none;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.contacto .footer-distributed .footer-left{
+  margin-bottom: 40px;
+}
+
+.contacto .footer-distributed form{
+  margin-top: 30px;
+}
+
+.contacto .footer-distributed form{
+  display: block;
+}
+
+.contacto .footer-distributed form button{
+  float: none;
+}
+}
+
+
+/* iconos */
+.footer-left{
+width: 55%;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #b98c56;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 18px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}

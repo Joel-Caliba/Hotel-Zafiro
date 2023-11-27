@@ -1,0 +1,1690 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+body{
+overflow: auto;
+background-image: linear-gradient(
+  150deg,
+  hsl(154deg 100% 97%) 0%,
+  hsl(155deg 100% 96%) 18%,
+  hsl(155deg 100% 95%) 29%,
+  hsl(155deg 100% 94%) 37%,
+  hsl(155deg 100% 93%) 43%,
+  hsl(155deg 100% 92%) 47%,
+  hsl(155deg 100% 91%) 51%,
+  hsl(156deg 100% 90%) 54%,
+  hsl(156deg 100% 89%) 57%,
+  hsl(156deg 100% 88%) 59%,
+  hsl(156deg 100% 87%) 61%,
+  hsl(156deg 100% 86%) 63%,
+  hsl(156deg 100% 85%) 65%,
+  hsl(156deg 100% 84%) 66%,
+  hsl(156deg 100% 82%) 68%,
+  hsl(156deg 100% 81%) 70%,
+  hsl(157deg 100% 80%) 73%,
+  hsl(157deg 100% 79%) 76%,
+  hsl(157deg 100% 77%) 79%,
+  hsl(157deg 100% 76%) 84%,
+  hsl(157deg 100% 75%) 90%,
+  hsl(158deg 100% 73%) 100%
+);
+}
+
+
+/* BOTONES DEL CUERPO */
+.btn-cuerpo {
+background: transparent;
+border: none;
+padding: 10px 20px;
+display: inline-block;
+font-size: 20px;
+font-weight: 800;
+width: auto;
+text-transform: uppercase;
+cursor: pointer;
+transform: skew(-21deg);
+}
+
+.btn-cuerpo span {
+display: inline-block;
+font-weight: 500;
+transform: skew(21deg);
+}
+
+.btn-cuerpo::before {
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+right: 100%;
+left: 0;
+background: rgb(20, 20, 20);
+opacity: 0;
+z-index: -1;
+transition: all 0.5s;
+}
+
+.btn-cuerpo:hover {
+color: #fff;
+}
+
+.btn-cuerpo:hover::before {
+left: 0;
+right: 0;
+opacity: 1;
+}
+
+/************************************************************ MENU ************************************************************/
+
+.menu-header .menu-bar{
+  display: none;
+}
+/* Esconder todos los iconos del menu en pantalla grande */
+.menu-header .header span2{
+  display: none;
+}
+.menu-header .menu-bar .boton .boton-reservar{
+  display: block;
+}
+
+.menu-header .header{
+  background-color: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 10%;
+  overflow: auto;
+}
+
+.menu-header .imagen{
+  background-size: cover;
+  background-image: url("img/hotel.jpg");
+  background-size: cover; /* Cubre toda la pantalla */
+  background-position: center center; /* Centra la imagen de fondo */
+  background-attachment: fixed;
+  filter: brightness(0.6);
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.menu-header .logo img{
+  width: 100px;
+}
+.menu-header #button-text{
+  color: #E6DAC2;
+}
+
+.menu-header .header a{
+  color: #E6DAC2;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: .4s;
+  font-family: 'Roboto', sans-serif;
+}
+.menu-header .header a:hover{
+  color: #D0B88C; 
+}
+.menu-header .bt-menu{
+  display: none;
+}
+.menu .menu-header .header .boton a{
+  margin:0
+}
+
+/* BOTON DE RESERVAR */
+.menu-header .header button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #5e4230;
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #322218;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E6DAC2;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
+
+/* Seccion cuenta | Mostrar por encima del inicio" */
+.cuenta {
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1; /* Asegura que la sección "cuenta" esté en la parte superior */
+}
+
+/* HEADER CUANDO SE HACE SCROLL PARA ABAJO */
+.abajo{
+background-color: #88FFD1;
+}
+.menu-header .abajo a{
+color: #006d54;
+}
+.menu-header .abajo #button-text{
+color: #006d54;
+}
+
+/*********************************** INICIO ***********************************/
+.inicio{
+  overflow: hidden;      /* Evita que el contenido desborde horizontalmente */
+}
+
+.inicio .inicio-contenedor{
+  color: #E6DAC2;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+.inicio .inicio-contenedor h1{
+  font-size: 65px;
+  font-weight: 700;
+}
+.inicio .inicio-contenedor h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+
+.inicio .inicio-contenedor .titulo-inicio h1{
+  font-size: 60px;
+}
+.inicio .inicio-contenedor .titulo-inicio h2{
+  margin-left: 70px;
+  font-size: 40px;
+}
+
+/* BOTON */
+.inicio .inicio-contenedor .boton a{
+  color: white;
+  font-weight: 700;
+  border: 3px solid #E6DAC2;
+  margin-top: 20px;
+  width: 40%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  
+}
+.inicio .inicio-contenedor .boton{
+  text-align: center;
+}
+.inicio .inicio-contenedor .btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: 3px solid #E6DAC2;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+ }
+
+ .inicio .inicio-contenedor .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E6DAC2;
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+ }
+ 
+ .inicio .inicio-contenedor .btn:hover::before {
+  transform: translateX(0);
+ }
+ .inicio .inicio-contenedor .boton a:hover{
+  color: black;
+ }
+
+
+
+@media (max-width: 1000px){
+  /* Tamaño logo HZ en movil */
+  .menu-header .logo img{
+    width: 50%;
+    max-width: 100%;
+  }
+  .menu-header .logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-header .header{
+      display: flex;
+      width: 70%;
+      height: 100vh;
+      margin: 0;
+      position: fixed;
+      flex-direction: column;
+      right: 0;
+      background-color: #88FFD1;
+
+      opacity: 0;
+      visibility: hidden;
+  }
+  .header.visible{
+      opacity: 1;
+      visibility: visible;
+      overflow: hidden;
+  }
+
+  .menu-header .header a{
+      color: #006d54;
+      display: flex;
+      width: 100%;
+      float: none;
+      justify-content: center;
+      border-bottom:1px solid #5E4230;
+      padding-bottom: 10px;
+  }  
+  .menu-header .header #button-text{
+      color: #006d54;
+  }
+  /* Mostrar iconos al lado del texto */
+  .menu-header .header span2{
+      display: flex;
+      margin-right: 10px;
+  }
+  /* MENU DESPLEGABLE MOVIL */
+  .menu .menu-header .bt-menu{
+      display: block;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 35px;
+      position: fixed;
+  }
+  .menu .menu-header .header .bt-menu2{
+      display: flex;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 45px;
+      right: -22vw;
+      top: -13px;
+  }
+
+  .bt-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+      color: #fff;
+      font-size: 24px;
+      border: none;
+      background-color: transparent;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+    }
+    
+    .bt-menu:hover {
+      color: #5e4230; /* Cambia el color de fondo en el hover */
+    }
+
+
+    
+  .inicio {
+      width: 100vh;
+  }
+  .inicio .inicio-contenedor .titulo-inicio h2{
+      margin: 0;
+      font-size: 35px;
+  }
+  .inicio .inicio-contenedor h2{
+      text-align: center;
+      font-size: 30px;
+  }
+  .inicio .inicio-contenedor h1{
+      text-align: center;
+      font-size: 45px;
+  }
+
+  .inicio .inicio-contenedor .boton a{
+      color: white;
+      font-weight: 700;
+      border: 3px solid #E6DAC2;
+      margin-top: 20px;
+      width: 60%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      
+  }
+}
+
+
+/************************************************************ HABITACIONES ************************************************************/
+.habitacion-contenedor .container{
+transition: transform 0.4s;
+max-width: 100%;
+height: 100%;
+margin-bottom: 20px;
+}
+.habitacion-contenedor .container:hover{
+transform: scale(1.1);
+}
+
+.habitacion-contenedor{
+margin: 0;
+padding: 0; 
+box-sizing: border-box;
+}
+.habitacion-contenedor h1,h2,h3,h4,h5{
+font-family: 'Raleway', sans-serif;
+}
+.habitacion-contenedor p{
+font-family: 'Raleway', sans-serif;
+}
+
+
+
+.habitacion-contenedor .contenido-habitacion{
+text-align: center;
+}
+.habitacion-contenedor .contenido-habitacion h1{
+font-size: 50px;
+font-weight: 400;
+padding: 50px;
+font-style: italic;
+}
+.habitacion-contenedor .contenido-habitacion h1 .titulo2{
+font-style: normal;
+font-weight: 600;
+}
+
+.habitacion-contenedor .contenido-habitacion p{
+font-size: 20px;
+font-weight: 300;
+}
+
+.habitacion-contenedor{
+
+margin-top: -40px;
+}
+.c-habitacion{
+/* probando */
+width: 100%;
+max-width: 95%; /* Establece el ancho máximo deseado */
+margin: 0 auto;  /* Configura márgenes automáticos en los lados izquierdo y derecho para centrar horizontalmente */
+min-height: 100vh;
+display: flex;
+justify-content: center;
+
+}
+
+/* TARJETAS */
+.content-section{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.content-section .card{
+flex: 1;
+margin: 20px 20px;
+box-shadow: 0px 2px 8px 0px rgba(0,0,0, 0.2);
+background-color: #D7FFF0;
+}
+.content-section .card img{
+width: 100%;
+height: auto;
+}
+.content-section .card h2{
+margin: 15px 0px;
+font-size: 28px;
+font-weight: 600;
+}
+.content-section .card p{
+font-size: 16px;
+line-height: 1.5;
+padding: 0px 10px;
+margin-bottom: 20px;
+}
+
+.habitacion-contenedor .c-habitacion .container a{
+padding: 14px 30px;
+font-weight: 600;
+}
+
+.container, .content-section, .card .btn-bg{
+display: flex;
+justify-content: center;
+}
+.info-habitaciones{
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+.habitacion .info-habitaciones p{
+font-size: 1vw;
+}
+.btn-masInfo{
+display: flex;
+}
+
+/* Boton mas informacion */
+.habitacion .container .content-section .card .btn-masInfo button {
+display: inline-block;
+border-radius: 4px;
+background-color: transparent;
+border: none;
+color: #286BAC;
+text-align: center;
+font-size: 1.1vw;
+width: auto;
+transition: all 0.5s;
+cursor: pointer;
+font-weight: 600;
+}
+
+.habitacion .container .content-section .card .btn-masInfo button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.habitacion .container .content-section .card .btn-masInfo button span:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -15px;
+transition: 0.5s;
+}
+
+.habitacion .container .content-section .card .btn-masInfo button:hover span {
+padding-right: 15px;
+}
+
+.habitacion .container .content-section .card .btn-masInfo button:hover span:after {
+opacity: 1;
+right: 0;
+}
+/* Precio */
+.btn-masInfo{
+justify-content: space-between;
+}
+.habitacion .btn-masInfo p{
+font-size: 0.7vw;
+}
+.btn-masInfo p span{
+font-family: 'Roboto', sans-serif;
+font-size: 2vw;
+font-weight: 800;
+width: auto;
+}
+
+@media (max-width: 1000px){
+.c-habitacion{
+    flex-direction: column;
+}
+
+  /* texto del card de habitaciones */
+  .habitacion .info-habitaciones p{
+    font-size: 15px;
+  }
+  .habitacion .container .content-section .card .btn-masInfo button {
+    font-size: 17px;
+   }
+   
+  .habitacion .btn-masInfo p{
+    font-size: 12px;
+  }
+  .btn-masInfo p span{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1000px){
+.contenido-habitacion{
+    text-align: center;
+}
+.habitacion-contenedor .contenido-habitacion h1{
+    font-size: 35px;
+    font-weight: 700;
+    padding: 50px;
+}
+
+}
+
+
+/************************************************************ EVENTOS ************************************************************/
+.eventos h1{
+font-family: 'Raleway', sans-serif;
+color: #001F4E;
+font-size: 3.5em;
+font-weight: 500;
+letter-spacing: 0px;
+margin-top: 20px;
+}
+
+.eventos .background-evenetos .contenido-eventos{
+text-align: center;
+}
+
+.eventos .background-evenetos .contenedor-eventos{
+display: flex;
+margin: 20px;
+justify-content: center;
+}
+.eventos .background-evenetos .contenedor-eventos .contenedor-clubNocturno{
+margin: 30px;
+text-align: center;
+}
+.eventos .background-evenetos .contenedor-eventos .contenedor-clubNocturno img{
+clip-path: circle(38.6% at 50% 50%);
+max-width: 100%; /* La imagen se ajustará al ancho máximo del contenedor */
+max-height: 400px; /* Establece una altura máxima para la imagen */
+width: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+object-fit: cover;
+}
+.eventos h2{
+font-family: 'Raleway', sans-serif;
+font-size: 2vw;
+color: #001F4E;
+font-weight: 500;
+letter-spacing: 2px;
+margin-top: 20px;
+}
+.eventos p{
+font-size: 15px;
+text-align: center;
+/* limitar el ancho del parrafo */
+max-width: 400px;
+margin: 0 auto;
+}
+.boton-eventos{
+text-align: center;
+}
+.eventos a{
+color: #D0B88C;
+text-decoration: none;
+font-weight: 700;
+margin-top: 15px;
+}
+.eventos a:hover{
+color: #b98c56;
+}
+
+
+
+
+@media (max-width: 1000px){
+.eventos .background-evenetos .contenedor-eventos{
+  display: flex;
+  flex-direction: column;
+}
+.eventos .background-evenetos .contenedor-eventos .contenedor-clubNocturno{
+  text-align: center;
+}
+.eventos h2{
+  font-size: 25px;
+}
+}
+/************************************************************ CONTACTO ************************************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+.contacto {
+font-family: 'Raleway', sans-serif;
+}
+
+.contacto .footer-distributed{
+background: #444;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+font: bold 16px sans-serif;
+text-align: left;
+padding: 50px 60px 40px;
+overflow: hidden;
+}
+
+/* Footer left */
+
+.contacto .footer-distributed .footer-left{
+float: left;
+}
+
+/* The company logo */
+
+.contacto .footer-distributed h3{
+color:  #ffffff;
+font: normal 36px 'Roboto', cursive;
+margin: 0 0 10px;
+}
+
+.contacto .footer-distributed h3 span{
+color:  #5383d3;
+}
+
+/* Footer links */
+
+.contacto .footer-distributed .footer-links{
+color:  #ffffff;
+margin: 0 0 10px;
+padding: 0;
+}
+
+.contacto .footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+}
+
+.contacto .footer-distributed .footer-company-name{
+color:  #8f9296;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+/* Footer social icons */
+
+.contacto .footer-distributed .footer-icons{
+margin-top: 40px;
+}
+
+.contacto .footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+.contacto .footer-distributed .footer-icons a:hover{
+color: #D0B88C;
+}
+
+/* Footer Right */
+
+.contacto .footer-distributed .footer-right{
+float: right;
+}
+
+.contacto .footer-distributed .footer-right p{
+display: flex;
+vertical-align: top;
+margin: 15px 42px 0 0;
+color: #ffffff;
+margin-bottom: 20px;
+}
+
+/* The contact form */
+
+.contacto .footer-distributed form{
+display: inline-block;
+}
+
+.contacto .footer-distributed form input,
+.contacto .footer-distributed form textarea{
+display: block;
+border-radius: 3px;
+box-sizing: border-box;
+background-color:  #1f2022;
+box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+border: none;
+resize: none;
+
+font: inherit;
+font-size: 14px;
+font-weight: normal;
+color:  #d1d2d2;
+
+width: 400px;
+padding: 18px;
+}
+
+.contacto .footer-distributed ::-webkit-input-placeholder {
+color:  #5c666b;
+}
+
+.contacto .footer-distributed ::-moz-placeholder {
+color:  #5c666b;
+opacity: 1;
+}
+
+.contacto .footer-distributed :-ms-input-placeholder{
+color:  #5c666b;
+}
+
+
+.contacto .footer-distributed form input{
+height: 55px;
+margin-bottom: 15px;
+}
+
+.contacto .footer-distributed form textarea{
+height: 100px;
+margin-bottom: 20px;
+}
+
+.contacto .footer-distributed form button{
+border-radius: 3px;
+background-color:  #33383b;
+color: #ffffff;
+border: 0;
+padding: 15px 50px;
+font-weight: bold;
+float: right;
+}
+
+
+
+@media (max-width: 1000px) {
+
+.contacto .footer-distributed {
+  font: bold 14px sans-serif;
+}
+
+.contacto .footer-distributed .footer-company-name{
+  font-size: 12px;
+}
+
+.contacto .footer-distributed form input,
+.contacto .footer-distributed form textarea{
+  width: 250px;
+}
+
+.contacto .footer-distributed form button{
+  padding: 10px 35px;
+}
+
+}
+
+@media (max-width: 1000px) {
+
+.contacto .footer-distributed{
+  padding: 30px;
+}
+
+.contacto .footer-distributed .footer-left,
+.contacto .footer-distributed .footer-right{
+  float: none;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacto .footer-distributed .footer-left{
+  margin-bottom: 40px;
+}
+
+.contacto .footer-distributed form{
+  margin-top: 30px;
+}
+
+.contacto .footer-distributed form{
+  display: block;
+}
+
+.contacto .footer-distributed form button{
+  float: none;
+}
+.single-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Apartado de contacta con nosotros */
+.footer-right {
+  text-align: center; /* Alinea al centro cuando la pantalla es menor a 1000px */
+}
+.footer-right p{
+  display: flex;
+  justify-content: center;
+}
+
+/* Puedes ajustar otros estilos según tus necesidades */
+.footer-right form {
+  max-width: 80%; /* Por ejemplo, limita el ancho del formulario */
+  margin: 0 auto; /* Centra el formulario dentro del contenedor */
+}
+
+/* titulo habitacion ventana emergente */
+.habitacion-contenedor1 .contenido-habitacion1 .titulo2{ 
+  font-size: 23px; /* Establece el tamaño del texto como el 5% del ancho del viewport */
+  max-width: 100%; /* Evita que el texto se desborde en pantallas pequeñas */
+}
+}
+
+
+/* iconos */
+.footer-left{
+width: 55%;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #D0B88C;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.single-cta {
+display: flex;
+align-items: center; /* Alinea verticalmente los elementos */
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 18px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+
+
+
+
+.habitacion1{
+width: 100%;
+}
+
+
+/* Habitacion Individual */
+.habitacion-contenedor{
+margin: 0;
+padding: 0; 
+box-sizing: border-box;
+}
+.habitacion-contenedor1 h1,h2,h3,h4,h5{
+font-family: 'Raleway', sans-serif;
+}
+.habitacion-contenedor1 p{
+font-family: 'Raleway', sans-serif;
+}
+
+.habitacion-contenedor1{
+background-color: #faf7f2;
+}
+.habitacion-contenedor1 .contenido-habitacion1{
+text-align: center;
+}
+.habitacion-contenedor1 .contenido-habitacion1 h1{
+font-weight: 400;
+padding-top: 10px;
+font-style: italic;
+
+font-size: 3vw; /* Establece el tamaño del texto como el 5% del ancho del viewport */
+max-width: 100%; /* Evita que el texto se desborde en pantallas pequeñas */
+}
+.habitacion-contenedor1 .contenido-habitacion1 h1 .titulo2{
+font-style: normal;
+font-weight: 600;
+}
+
+
+/* ----------------------------------------------------------- */
+
+/* Styling */
+.habitacion-contenedor1 .c-habitacion1 {
+margin-top: 50px;
+}
+
+.container1 {
+margin: 0 auto;
+padding: 0 20px;
+
+/* Cambiando la posicion del carousel al medio */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.carousel {
+display: block;
+text-align: left;
+position: relative;
+margin-bottom: 22px;
+/* Cambiando ancho del carousel */
+width: 50%; 
+height: auto;
+}
+
+.carousel input {
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+height: 1px;
+width: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+}
+
+
+.carousel input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
+margin-left: -300%;
+}
+
+.carousel input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
+margin-left: -200%;
+}
+
+.carousel input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
+margin-left: -100%;
+}
+
+.carousel input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
+margin-left: 0;
+}
+
+.carousel input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
+box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+.carousel input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
+box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+.carousel input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
+box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+.carousel input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
+box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+
+.carousel__slides {
+position: relative;
+z-index: 1;
+padding: 0;
+margin: 0;
+overflow: hidden;
+white-space: nowrap;
+box-sizing: border-box;
+display: flex;
+}
+
+.carousel__slide {
+position: relative;
+display: block;
+flex: 1 0 100%;
+width: 100%;
+height: 100%;
+overflow: hidden;
+transition: all 300ms ease-out;
+box-sizing: border-box;
+white-space: normal;
+}
+
+.carousel__slide figure {
+display: flex;
+margin: 0;
+height: 50vh;
+}
+
+.carousel__slide div {
+position: relative;
+width: 100%;
+}
+
+.carousel__slide img {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.carousel__slide figcaption {
+align-self: flex-end;
+padding: 20px 20px 0 20px;
+flex: 0 0 auto;
+width: 25%;
+min-width: 150px;
+}
+
+.carousel__slide .credit {
+margin-top: 1rem;
+color: rgba(0, 0, 0, 0.5);
+display: block;
+}
+
+.carousel__slide.scrollable {
+overflow-y: scroll;
+}
+
+.carousel__thumbnails {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+margin: 0 -10px;
+}
+
+.carousel__slides + .carousel__thumbnails {
+margin-top: 20px;
+}
+
+.carousel__thumbnails li {
+flex: 1 1 auto;
+max-width: calc((100% / 6) - 20px);
+margin: 0 10px;
+transition: all 300ms ease-in-out;
+}
+
+.carousel__thumbnails label {
+display: block;
+}
+
+.carousel__thumbnails label:hover,
+.carousel__thumbnails label:focus {
+cursor: pointer;
+box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+transition: all 300ms ease-in-out;
+}
+
+.carousel__thumbnails img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.habitacion-contenedor1 .c-habitacion1 .container1 .credit{
+font-weight: 800;
+font-size: 20px;
+}
+
+.habitacion-contenedor1 .c-habitacion1 .container1 .descripcion h1{
+text-align: center;
+margin-top: 50px;
+}
+.habitacion-contenedor1 .c-habitacion1 .container1 .descripcion .t-descripcion{
+text-align: center;
+width: 70%;
+margin: 0 auto;
+}
+.habitacion-contenedor1 .c-habitacion1 .container1 .l-caracteristicas{
+margin-left: 14%;
+}
+
+
+.linea {
+width: 80%;
+height: 2px; /* Establece el grosor de la línea */
+background-color: #a3a3a8c5; /* Cambia el color de la línea, en este caso, negro */
+border-radius: 80px;
+margin: 50px auto;
+}
+
+
+/* ventana emergente */
+.close-button{
+font-size: 25px;
+position: fixed;
+background-color: transparent;
+border-style: none;
+right: 7%;
+top: 7%;
+z-index: 1000;
+color: #5d5d5d;
+}
+.close-button:hover{
+color: black;
+}
+.close{
+transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
+transform: translateY(60vh);
+}
+
+.ventanaEmergente{
+width: 100%;
+height: 100%;
+position: fixed;
+background-color: rgba(0, 0, 0, 0.4); /* Negro con 20% de opacidad */
+z-index: 10;
+display: none; /* Usamos flexbox para centrar vertical y horizontalmente */
+justify-content: center;
+align-items: center;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow: auto;
+}
+
+.ventanaEmergente .ve-contenedor{
+position: relative;
+width: 90%;
+height: 90%;
+z-index: 11;
+overflow: auto;
+}
+
+/* CAROUSEL 1*/
+.carousel-body2 a{
+text-decoration: none;
+}
+.carousel-body3 a{
+text-decoration: none;
+}
+
+.carousel-body{
+width: 100%;
+max-width: 1450px;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.carousel-contenedor{
+width: 40vw; /* Puedes ajustar este valor según tus necesidades */
+max-width: 100%;
+height: auto;
+margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+position: relative;
+}
+.mySlides{
+display: none;
+}
+.mySlides img{
+width: 100%;
+}
+
+.prev,
+.next{
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: #fff; /* Color de las flechas */
+font-weight: bold;
+font-size: 28px;
+transition: 0.6 ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+text-decoration: none;
+}
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+color: rgba(0, 0, 0, 0.8);
+}
+.elements{
+text-align: center;
+}
+.quadrate{
+cursor: pointer;
+height: 4px;
+width: 50px;
+margin: 0 2px;
+background-color: #717171;
+display: inline-block;
+transition: background-color 0.6s ease;
+border-radius: 2px;
+}
+.active-carousel, .quadrate:hover{
+background-color: black;
+}
+@media screen and (max-width:900px) {
+.carousel-contenedor{
+    width: 100%;
+}
+}
+@media screen and (max-width:500px) {
+.carousel-contenedor{
+    width: 100%;
+}
+.prev,
+.next{
+    padding: 5px;
+}
+}
+
+
+/* carousel 2 */
+.carousel-body2{
+width: 100%;
+max-width: 1450px;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.carousel-contenedor2{
+width: 40vw; /* Puedes ajustar este valor según tus necesidades */
+max-width: 100%;
+height: auto;
+margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+position: relative;
+}
+.mySlides2{
+  display: none;
+}
+.mySlides2 img{
+  width: 100%;
+}
+.prev2,
+.next2{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff; /* Color de las flechas */
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev2:hover,
+.next2:hover{
+  color: rgba(0, 0, 0, 0.8);
+}
+.elements2{
+  text-align: center;
+}
+.quadrate2{
+  cursor: pointer;
+  height: 4px;
+  width: 50px;
+  margin: 0 2px;
+  background-color: #717171;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 2px;
+}
+.active-carousel2, .quadrate2:hover{
+  background-color: #fff;
+}
+@media screen and (max-width:900px) {
+  .carousel-contenedor2{
+      width: 100%;
+  }
+}
+@media screen and (max-width:500px) {
+  .carousel-contenedor2{
+      width: 100%;
+  }
+  .prev2,
+  .next2{
+      padding: 5px;
+  }
+}
+
+
+/* CAROUSEL 3 */
+.carousel-body3{
+width: 100%;
+max-width: 1450px;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.carousel-contenedor3{
+width: 40vw; /* Puedes ajustar este valor según tus necesidades */
+max-width: 100%;
+height: auto;
+margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+position: relative;
+}
+.mySlides3{
+display: none;
+}
+.mySlides3 img{
+width: 100%;
+}
+.prev3,
+.next3{
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: #fff; /* Color de las flechas */
+font-weight: bold;
+font-size: 28px;
+transition: 0.6 ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+.next3 {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+.prev3:hover,
+.next3:hover{
+color: rgba(0, 0, 0, 0.8);
+}
+.elements3{
+text-align: center;
+}
+.quadrate3{
+cursor: pointer;
+height: 4px;
+width: 50px;
+margin: 0 2px;
+background-color: #717171;
+display: inline-block;
+transition: background-color 0.6s ease;
+border-radius: 2px;
+}
+.active-carousel3, .quadrate3:hover{
+background-color: #fff;
+}
+@media screen and (max-width:900px) {
+.carousel-contenedor3{
+    width: 100%;
+}
+}
+@media screen and (max-width:500px) {
+.carousel-contenedor3{
+    width: 100%;
+}
+.prev3,
+.next3{
+    padding: 5px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* EVENTOS ventana emergente CLUB NOCTURNO */
+.eventos1{
+overflow: auto;
+background-image: linear-gradient(
+  150deg,
+  hsl(154deg 100% 97%) 0%,
+  hsl(155deg 100% 96%) 18%,
+  hsl(155deg 100% 95%) 29%,
+  hsl(155deg 100% 94%) 37%,
+  hsl(155deg 100% 93%) 43%,
+  hsl(155deg 100% 92%) 47%,
+  hsl(155deg 100% 91%) 51%,
+  hsl(156deg 100% 90%) 54%,
+  hsl(156deg 100% 89%) 57%,
+  hsl(156deg 100% 88%) 59%,
+  hsl(156deg 100% 87%) 61%,
+  hsl(156deg 100% 86%) 63%,
+  hsl(156deg 100% 85%) 65%,
+  hsl(156deg 100% 84%) 66%,
+  hsl(156deg 100% 82%) 68%,
+  hsl(156deg 100% 81%) 70%,
+  hsl(157deg 100% 80%) 73%,
+  hsl(157deg 100% 79%) 76%,
+  hsl(157deg 100% 77%) 79%,
+  hsl(157deg 100% 76%) 84%,
+  hsl(157deg 100% 75%) 90%,
+  hsl(158deg 100% 73%) 100%
+);
+}
+
+.eventos1{
+width: 90%;
+height: 90%;
+}
+.eventos .eventos-contenedor .eventos-titulo h1{
+text-align: center;
+margin-bottom: 30px;
+font-size: 3rem;
+}
+.eventos .eventos-contenedor .eventos-titulo .subtitulo p{
+text-align: center;
+}
+
+
+
+
+/*************** CONTENIDO DENTRO DE VENTANA EMERGENTE ***************/
+/* CLUB NOCTURNO */
+.c-cNocturno{
+margin: 30px;
+display: flex;
+justify-content: space-between;
+}
+.c-cNocturno .img-evento {
+height: 70vh;
+}
+.c-eventos .c-cNocturno .c-texto{
+margin: 20px;
+}
+.c-eventos .c-cNocturno .c-texto h1{
+text-align: center;
+margin-bottom: 40px;
+font-size: 3rem
+}
+.eventos1 .c-texto p{
+width: 100%;
+max-width: 100%;
+margin-bottom: 20px;
+}
+
+/* PIANO BAR */
+.c-pianoBar{
+margin: 30px;
+display: flex;
+flex-direction: row-reverse;
+}
+.img-evento {
+height: 70vh;
+}
+.c-eventos .c-pianoBar .c-texto{
+margin: 20px;
+}
+.c-eventos .c-pianoBar .c-texto h1{
+text-align: center;
+margin-bottom: 40px;
+}
+.img-derecha {
+float: right;
+margin-left: 20px; /* Ajusta el margen izquierdo según tus preferencias */
+}
+
+/* SALON DIVERSION */
+.c-salonDiversion{
+margin: 30px;
+display: flex;
+justify-content: space-between;
+}
+.img-evento {
+height: 70vh;
+}
+.c-eventos .c-salonDiversion .c-texto{
+margin: 20px;
+}
+.c-eventos .c-salonDiversion .c-texto h1{
+text-align: center;
+margin-bottom: 40px;
+}
+
+/* REUNIONES */
+.c-reuniones{
+margin: 30px;
+display: flex;
+flex-direction: row-reverse;
+}
+.img-evento {
+height: 70vh;
+}
+.c-eventos .c-reuniones .c-texto{
+margin: 20px;
+}
+.c-eventos .c-reuniones .c-texto h1{
+text-align: center;
+margin-bottom: 40px;
+}
+.img-derecha {
+float: right;
+margin-left: 20px; /* Ajusta el margen izquierdo según tus preferencias */
+}
+
+@media (max-width: 1000px){
+.c-cNocturno, .c-pianoBar, .c-salonDiversion, .c-reuniones{
+  flex-direction: column;
+}
+/* Club Nocturno */
+.c-cNocturno .img-evento {
+  /* ADAPTAR LA IAMGEN PARA MOVIL */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+/* Piano Bar */
+.c-pianoBar .img-evento {
+  /* ADAPTAR LA IAMGEN PARA MOVIL */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+/* Salon Diversion */
+.c-salonDiversion .img-evento {
+  /* ADAPTAR LA IAMGEN PARA MOVIL */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+/* Salon Reunion */
+.c-reuniones .img-evento {
+  /* ADAPTAR LA IAMGEN PARA MOVIL */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+}
+

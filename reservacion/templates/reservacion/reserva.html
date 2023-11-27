@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/reserva.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="reserva" id="reserva">
+        <div class="img"></div>
+        <div class="contenedor-reserva">
+
+            <div class="reservar-contenedor">
+                {% if request.user.is_authenticated %}
+                <h3>
+                    BIENVENIDO {{ request.user.username|upper }}
+                </h3>
+                {% endif %}
+                <h1>Reservar</h1>
+                <form action="{% url 'reservacion:reserva' %}" method="post">
+
+                    {% csrf_token %}
+
+
+                    <div class="nombre-apellido">
+                        <h2>Nombre y Apellido</h2>
+                        <div class="c-nombre">
+                            <div class="input-form">
+                                <input class="input" name="dni" type="text" required="">
+                                <label class="textUser">DNI</label>
+                            </div>
+                            <div class="input-form">
+                                <input class="input" name="email" type="email" required="">
+                                <label class="textUser">email</label>
+                            </div>
+                            <div class="input-form">
+                                <input class="input" name="nombre" type="text" required="">
+                                <label class="textUser">Nombre</label>
+                            </div>
+                            <div class="input-form">
+                                <input class="input" name="apellido" type="text" required="">
+                                <label class="textUser">Apellido</label>
+                            </div>
+                            <div class="input-form">
+                                <input class="input" name="direccion" type="text" required="">
+                                <label class="textUser">direccion</label>
+                            </div>
+                            <div class="input-form">
+                                <input class="input" name="telefono" type="text" required="">
+                                <label class="textUser">telefono</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tipo-habitacion">
+                        <h2>Tipo de habitacion</h2>
+                        <div class="container">
+                                <label>
+                                    <input type="radio" name="radio" value="{{ habitacion_individual.id }}" checked="">
+                                    <span>Individual</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio" value="{{ habitacion_doble.id }}">
+                                    <span>Doble</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio" value="{{ habitacion_familiar.id }}">
+                                    <span>Familiar</span>
+                                </label>  
+                        </div>
+                    </div>
+
+
+                    <div class="cant-personas">
+                        <h2>Cantidad de Personas</h2>
+
+                        <div class="opciones">
+                            <select required>
+                                <option name="cantidadpersona" value="" hidden>Cantidad de Personas</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                    <div class="fecha-llegada-salida">
+                        <h2>Fecha de Llegada y Salida</h2>
+                        <div class="c-fls">
+                            <div class="input-form">
+                                <label class="textDate" for="llegada" name="fechaentrada">Llegada</label>
+                                <input class="input" name="fecha-llegada" type="date" id="llegada" required="">
+                            </div>
+
+                            <div class="input-form">
+                                <label class="textDate" for="salida" name="fechasalida">Salida</label>
+                                <input class="input" name="fecha-salida" type="date" id="salida" required="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--<button type="submit">
+                        <span>Siguiente</span>
+                        <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                            <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                        </svg>
+                    </button> -->
+                    <button type="submit">Enviar Reserva</button>
+                    {% if mensaje %}
+                        <p>{{ mensaje }}</p>
+                    {% endif %}
+                </form>
+                
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+
+
+<!-- <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar Reserva</button>
+</form>
+
+{% if mensaje %}
+    <p>{{ mensaje }}</p>
+{% endif %}  
+ -->
