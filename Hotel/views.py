@@ -6,17 +6,24 @@ from django.contrib import messages
 from django.contrib.auth import logout
 from .models import Tipohabitaciones,crear_eventos
 from django.shortcuts import render, redirect  
-#from .forms import ReservacionForm
+def registro(request):
+    data={
+        'form': CustomuUserCreationForm
+    }
+    if request.method == 'POST':
+        formulario = CustomuUserCreationForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            user = authenticate(username=formulario.cleaned_data["username"], password= formulario.cleaned_data["password1"])
+            login(request, user)
+            messages.success(request, "se registro correctamente")
+            return redirect (to='home')
+        data["form"] = formulario
+    return render(request, 'registration/registro.html', data)
+            
 
-#def reserva_view(request):
-#    if request.method == 'POST':
-#        form = ReservacionForm(request.POST)
-#        if form.is_valid():
-#            form.save()
-#            return redirect('página_de_confirmación')  # Puedes redirigir a la página de confirmación después de guardar la reserva
-#    else:
-#        form = ReservacionForm()
-#    return render(request, 'tu_template.html', {'form': form})
+        
+         
 
 
 
@@ -80,7 +87,6 @@ def login(request):
         
         data['form'] = formulario
     return render(request, 'registration/login.html',data)
-
 
 '''
 

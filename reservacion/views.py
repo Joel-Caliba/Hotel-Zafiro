@@ -18,7 +18,7 @@ def reserva(request):
             reserva = reserva_form.save(commit=False)
             # Crear un nuevo huésped con los datos del formulario
             huesped = Huespedes(
-                dni=reserva_form.creaned_data["dni"],
+                dni=reserva_form.cleaned_data["dni"],
                 nombre=reserva_form.cleaned_data['nombre'],
                 apellido=reserva_form.cleaned_data['apellido'],
                 direccion=reserva_form.cleaned_data['direccion'],
@@ -39,5 +39,5 @@ def reserva(request):
         else:
             data["form"] = reserva_form
 
-    return render(request, 'reservacion/reserva.html', data)
+    return render(metodo, data)
 

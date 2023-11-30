@@ -3,7 +3,7 @@ from .models import Reservaciones, Huespedes
 
 class ReservacionesForm(forms.ModelForm):
     # Agregar campos para el huésped
-    dni = forms.IntegerField(label='Dni'),
+    dni = forms.IntegerField(label='Dni',),
     nombre = forms.CharField(label='Nombre', max_length=30)
     apellido = forms.CharField(label='Apellido', max_length=40)
     direccion = forms.CharField(label='Dirección', max_length=100)
@@ -13,11 +13,21 @@ class ReservacionesForm(forms.ModelForm):
     class Meta:
         model = Reservaciones
         fields = ['fechaentrada', 'fechasalida', 'cantidadpersona']
-
+       
     # Personalizar widgets o validaciones específicas para cada campo
-    fechaentrada = forms.DateField(label='Fecha de Entrada', widget=forms.TextInput(attrs={'type': 'date'}))
-    fechasalida = forms.DateField(label='Fecha de Salida', widget=forms.TextInput(attrs={'type': 'date'}))
-
+    nombre = forms.CharField(label='Nombre', max_length=30, widget=forms.TextInput(attrs={'class': 'input', 'type': 'text', 'required': True}))
+    apellido = forms.CharField(label='Apellido', max_length=40, widget=forms.TextInput(attrs={'class': 'input', 'type': 'text', 'required': True}))
+    fechaentrada = forms.DateField(
+    label='Fecha de Entrada',
+    widget=forms.DateInput(attrs={'type': 'date', 'id': 'llegada', 'name': 'fecha-llegada', 'class': 'input'}),
+    required=True),
+    fechasalida = forms.DateField(label='Fecha de Salida', widget=forms.DateInput(attrs={'type': 'date', 'id':'salida', 'name':'fecha-salida', 'class':'input','required': True})),
+    cantidad_persona = forms.ChoiceField(
+        label='Cantidad de Personas',
+        choices=[('', 'Selecciona una opción'), ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'), ('6', '6')],
+        required=True,
+        widget=forms.Select(attrs={'class': 'opciones', 'required': True})
+    )
     def clean(self):
         cleaned_data = super().clean()
 
