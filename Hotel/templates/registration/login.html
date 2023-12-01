@@ -1,0 +1,107 @@
+{% load static %}
+<!-- 
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión y Crear Cuenta</title>
+    Font Awesome 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="{% url 'login' %}" class="sign-in-form" method="post">
+                    {% csrf_token %}
+                    <h2 class="title">Iniciar Sesión</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input name="username" type="text" placeholder="Nombre Usuario" required autocomplete="username"/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input name="password1" type="password" placeholder="Contraseña" class="pass" required autocomplete="current-password"/>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <input type="submit" value="Iniciar Sesión" class="btn solid" />
+                    <p class="social-text">O inicie sesión en plataformas sociales</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="{% url 'login' %}" class="sign-up-form" method="post">
+                    {% csrf_token %}
+                    <h2 class="title">Registrarse</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input name="username" type="text" placeholder="Nombre Usuario" required autocomplete="username"/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input name="email" type="email" placeholder="Email" required/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input name="password1" type="password" placeholder="Contraseña" class="pass" required />
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input name="password2" type="password" placeholder="Confirmar Contraseña" class="pass" required/>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <input type="submit" class="btn" value="Registrarse" />
+                    <p class="social-text">O regístrate en plataformas sociales</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>¿No tienes cuenta?</h3>
+                    <p>Registra una cuenta nueva en segundos!</p>
+                    <button class="btn transparent" id="sign-up-btn">Registrarse</button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicie sesión con su cuenta.</p>
+                    <button class="btn transparent" id="sign-in-btn">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/login.js' %}"></script>
+</body>
+</html> -->
+<br>
+<br>
+<br>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{form}}
+    </table>
+    <input type="submit" value="ingresar">
+
+    <a href="{% url 'home'  %}">inicio</a>
+    <a href="{% url 'registro'  %}">registro</a>
+</form>

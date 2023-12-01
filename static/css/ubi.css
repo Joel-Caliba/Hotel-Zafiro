@@ -1,0 +1,7 @@
+
+.container{
+    background-color: bisque;
+    display: grid;
+    width: 100px;
+    right: 500px;
+}

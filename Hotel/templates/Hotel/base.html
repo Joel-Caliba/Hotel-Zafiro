@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/logo-i.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link para poder usar los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FUENTE titulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,100;0,200;0,300;0,600;1,400&family=Fugaz+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Open+Sans:wght@400;600&family=Oswald&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FUENTE parrafo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,100;0,200;0,300;0,600;1,400&family=Fugaz+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Open+Sans:wght@400;600&family=Oswald&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FUENTE eventos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,100;0,200;0,300;0,600;1,400&family=Fugaz+One&family=Lato:wght@100;300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&family=Oswald&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Hotel Zafiro</title>
+</head>
+<!-- MENU e INICIO --> 
+<section class="menu" id="menu"> 
+    <div class="menu-header">
+        <!-- icono de menu desplegable -->
+        <button id="abrir" href="" class="bt-menu"><span2 class="fa-solid fa-bars"></span2></button>
+        <nav class="header" id="nav">
+            <button id="cerrar" href="" class="bt-menu2"><span2 class="fa-solid fa-xmark"></span2></button>
+            <div class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <a href="{% url 'home' %}"><span2 class="fa-solid fa-house"></span2> INICIO</a> 
+            <a href="{% url 'ubicacion' %}"><span2 class="fa-solid fa-location-dot"></span2> UBICACION</a>
+            <a href="{% url 'habitaciones' %}"><span2 class="fa-solid fa-bed"></span2> HABITACIONES</a>
+            <a href="{% url 'eventos'  %}" ><span2 class="fa-solid fa-calendar-days"></span2> EVENTOS</a>
+            <a href="{% url 'contacto' %}"<span2 class="fa-solid fa-address-book"></span2> CONTACTO</a>
+            {% if request.user.is_authenticated %}
+            <div class="boton">
+                <a href="{% url 'login' %}">
+                    <button id="botonCuenta" class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Cuenta</span> 
+                    </button>
+                </a>
+            </div>
+            {% else %}
+            <div class="boton">
+                <a href="{% url 'login' %}">
+                    <button id="botonCuenta" class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Cuenta</span> 
+                    </button>
+                </a>
+            </div>
+            {% endif %}
+        </nav>
+        <div class="imagen">
+        </div>
+    </div>
+
+    <div class="inicio">
+        <div class="inicio-contenedor">
+            <h2>Bienvenido a</h2>
+            <h1>HOTEL ZAFIRO</h1>
+            <h2>Salta Capital</h2>
+            <div class="boton">
+                <a class="btn" href="#habitacion">RESERVAR</a>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<body>
+    {% block content %}
+    
+    {% endblock %}
+    <script src="{% static 'js/menu.js' %}"></script>
+
+</body>
+</html>

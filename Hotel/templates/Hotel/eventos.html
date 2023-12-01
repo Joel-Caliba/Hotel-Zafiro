@@ -1,0 +1,51 @@
+{% extends "Hotel/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<section class="eventos" id="eventos">
+    <div class="background-evenetos">
+        <div class="contenido-eventos">
+            <h1>Eventos</h1>
+        </div>
+        {% for evento in eventos %}
+        <div class="contenedor-eventos">
+            <div class="contenedor-clubNocturno">
+                <img src="{{evento.imagen.url}}" alt="">   
+                <h2>{{evento.titulo}}</h2>   
+                <p>{{evento.parrafo}}</p>
+                <div class="boton-eventos">
+                    <button class="btn-cuerpo" id="open-button-cNocturno"><span>VER MÁS</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ventana emergente -->
+        <div class="ventanaEmergente" id="ventanaEmergenteCNocturno">
+            <!-- Boton Cerrar -->
+            <button class="close-button fa-solid fa-xmark" id="close-button-cNocturno"></button>
+            <!-- Contenido de Club Nocturno -->
+            <section class="eventos1" id="eventos1">
+                <div class="eventos-contenedor">
+                    <div class="eventos-titulo">
+                        <h1>Descubrí nuestras salas para eventos</h1>
+                    </div>
+                    <div class="c-eventos">
+                        <div class="c-cNocturno">
+                            <img src="{{evento.imagen.url}}" alt="" class="img-evento">
+                            <div class="c-texto">
+                                <h1>{{evento.titulo}}</h1>
+                                <p>{{evento.descripcion}}</p>
+                                <ul>
+                                    {{evento.detalle}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
